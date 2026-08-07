@@ -1,0 +1,142 @@
+.main-container {
+    width: 100%;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img {
+    border-radius: 200px;
+    height: 80px;
+    cursor: pointer;
+    margin: 15px 0 0 0;
+}
+
+.list-group {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    /* color: #EAF6FF; */
+    color: #BFE3FA;
+    width: 100%;
+    font-weight: 800;
+    margin: 20px 0 0 0;
+}
+
+.menu-option {
+    margin: 10px 20px 0 0;
+    padding: 25px 35px 10px 35px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 5px 5px #7FC4F2;
+}
+
+.menu-option:hover {
+    transform: translateY(-2px);
+    color: #EAF6FF;
+}
+
+.menu-option-selected {
+    box-shadow: 5px 5px #7FC4F2;
+    transform: translateY(0);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.menu-option-unselected {
+    box-shadow: none;
+    transform: translateY(3px);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.img-container {
+    margin: 30px 0 0 120px;
+}
+
+.img-container:hover {
+    transform: translateY(-2px);
+}
+
+.logo-theme-container {
+    margin: 22px 0 0 0;
+}
+
+.logo-theme {
+    margin: 20px 10px 0 0;
+    padding: 10px 15px 20px 35px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.logo-item-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+}
+
+.logo-sun {
+    color: yellow;
+}
+
+.logo-container {
+    padding: 5px 5px;
+    background-color: #9CA3AF;
+    border-radius: 5px;
+}
+
+.logo-moon {
+    color: #1F2937;
+}
+
+.icon-idioms {
+    margin: 10px 20px 0 0;
+    position: absolute;
+    top: -2px;
+    left: 12px;
+    width: 18px;
+    height: 10px;
+    pointer-events: none;
+}
+
+.languaje-icon {
+    color: #7FC4F2;
+}
+
+.logo-idioms {
+    margin: 7px 120px 0 0;
+    padding: 25px 15px 0 35px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.idioms-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.language-selector {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #7FC4F2;
+    border: 1px solid rgba(234, 246, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px 32px 8px 38px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.15s ease;
+
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237FC4F2'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
