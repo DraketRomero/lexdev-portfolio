@@ -1,0 +1,28 @@
+.role {
+    font-size: 23px;
+}
+
+.word {
+    color: #7FC4F2;
+    transition: opacity 300ms ease;
+    opacity: 1;
+}
+
+.word.hidden {
+    opacity: 0;
+}
+
+.social-link { color: white; }
+.social-link:hover { color: #3E8FD6; }
+
+.bisel-elevado {
+  background: #1C2541;
+  border-radius: 8px;
+  box-shadow:
+    -1px -3px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.button-homepage {
+    padding: 8px 15px;
+}
