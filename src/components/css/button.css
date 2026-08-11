@@ -1,0 +1,43 @@
+.menu-option:hover {
+    transform: translateY(-2px);
+}
+
+.button-container {
+    margin: 40px 0 0 0;
+}
+
+.button {
+    border: 1px solid #7FC4F2;
+    border-radius: 9px;
+    color: #7FC4F2;
+    cursor: pointer;
+    box-shadow: 3px 4px #7FC4F2;
+    margin: 0 20px 0 0;
+}
+
+.button:active {
+    box-shadow: none;
+    transform: translateY(4px);
+    transition: box-shadow 0.10s ease, transform 0.10s ease;
+}
+
+.button-unactive {
+    box-shadow: none;
+}
+
+.navlink-config {
+    text-decoration: none;
+    color: #EAF6FF;
+}
+
+.navlink-config:hover {
+    color: #7FC4F2;
+}
+
+.navlink-config:visited {
+    color: #EAF6FF;
+}
+
+.navlink-config:active {
+    color: #EAF6FF;
+}
