@@ -1,12 +1,6 @@
 import './App.css'
-import { Header } from './components/Header'
+import { LayoutPage } from './pages/LayoutPage';
 
-const App = () => {
-  return(
-    <div>
-      <Header />
-    </div>
-  )
-}
+const App = () => <LayoutPage />;
 
 export default App
