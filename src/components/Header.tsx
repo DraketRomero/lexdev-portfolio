@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { MoonIcon, SunIcon } from "../assets/icons";
+import { useEffect, useState } from 'react';
+import { MoonIcon, SunIcon } from '../assets/icons';
 import './css/header.css';
 import img_dark from './../assets/img/logo-dark-theme.png';
-import img_light from './../assets/img/logo-light-theme.webp';
+import img_light from './../assets/img/logo-light-theme.png';
 import { LanguageIcon } from '../assets/icons/LanguageIcon';
 import { Link, useLocation } from 'react-router';
-import { Button } from "./Button";
+import { Button } from './Button';
 
 export const Header = () => {
     const [isDarkTheme, setIsDarkTheme] = useState<boolean>(() => localStorage.getItem('darkmode') === 'active');
@@ -37,48 +37,48 @@ export const Header = () => {
                     </div>
 
                     <div>
-                        <ul className="list-group">
+                        <ul className='list-group'>
                             <li>
                                 <Button
-                                    className={`menu-option button-header`}
-                                    routeName="Proyectos"
-                                    routeDestination="/projects"
-                                    active={pathname == "/projects"}
+                                    className='menu-option button-header'
+                                    routeName='Proyectos'
+                                    routeDestination='/projects'
+                                    active={pathname == '/projects'}
                                 />
                             </li>
 
 
                             <li>
                                 <Button
-                                    className={`menu-option button-header`}
-                                    routeName="Experiencia"
-                                    routeDestination="/experience"
-                                    active={pathname == "/experience"}
+                                    className='menu-option button-header'
+                                    routeName='Experiencia'
+                                    routeDestination='/experience'
+                                    active={pathname == '/experience'}
                                 />
                             </li>
 
                             <li>
                                 <Button
-                                    className={`menu-option button-header`}
-                                    routeName="Sobre mi"
-                                    routeDestination="/about-me"
-                                    active={pathname == "/about-me"}
+                                    className='menu-option button-header'
+                                    routeName='Sobre mi'
+                                    routeDestination='/about-me'
+                                    active={pathname == '/about-me'}
                                 />
                             </li>
 
-                            <li className="logo-theme" onClick={toggleTheme}>
-                                <button className="theme-toggle-button" onClick={toggleTheme}>
-                                    <div className="logo-item-container">
-                                        <div className="logo-theme-container">{isDarkTheme ? <MoonIcon /> : <SunIcon />}</div>
+                            <li className='logo-theme'>
+                                <button className='theme-toggle-button' onClick={toggleTheme}>
+                                    <div className='logo-item-container'>
+                                        <div className='logo-theme-container'>{isDarkTheme ? <MoonIcon /> : <SunIcon />}</div>
                                     </div>
                                 </button>
                             </li>
 
-                            <li className={`logo-idioms`}>
-                                <div className="idioms-container">
+                            <li className='logo-idioms'>
+                                <div className='idioms-container'>
                                     <div>
-                                        <span className="icon-idioms">{LanguageIcon}</span>
-                                        <select className="language-selector">
+                                        <span className='icon-idioms'>{LanguageIcon}</span>
+                                        <select className='language-selector'>
                                             <option>EN</option>
                                             <option>ES</option>
                                         </select>
