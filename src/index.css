@@ -6,16 +6,20 @@
     --primary-color: #BFE3FA;
     --secondary-color: #1C2541;
     --accent-color: #EAF6FF;
+    --bg-icons: #1E5A9C;
 }
 
-.darkmode {
-    --base-color: #1C2541;
-    --base-variant: #7FC4F2;
-    --text-color: #7FC4F2;
-    --secondary-text: #BFE3FA;
-    --primary-color: #1C2541;
-    --secondary-color: white;
-    --accent-color: #3E8FD6;
+@media (prefers-color-scheme: dark) {
+    .darkmode {
+        --base-color: #1C2541;
+        --base-variant: #7FC4F2;
+        --text-color: #7FC4F2;
+        --secondary-text: #BFE3FA;
+        --primary-color: #1C2541;
+        --secondary-color: white;
+        --accent-color: #3E8FD6;
+        --bg-icons: #1E5A9C;
+    }
 }
 
 html {
