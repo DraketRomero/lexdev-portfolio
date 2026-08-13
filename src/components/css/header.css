@@ -8,28 +8,31 @@
     justify-content: space-between;
 }
 
-.logo-img {
+.logo-img-light {
     border-radius: 200px;
-    height: 80px;
+    height: 60px;
     cursor: pointer;
-    margin: 15px 0 0 0;
+    margin: 28px 0 0 17px;
+}
+
+.logo-img-dark {
+    border-radius: 200px;
+    height: 70px;
+    cursor: pointer;
+    margin: 20px 0 0 0;
 }
 
 .list-group {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    color: #BFE3FA;
+    color: var(--secondary-text);
     width: 100%;
     font-weight: 800;
 }
 
-.button-header {
-    padding: 18px 29px;
-}
-
 .img-container {
-    margin: 20px 0 0 120px;
+    margin: 19px 0 0 120px;
 }
 
 .img-container:hover {
@@ -62,12 +65,12 @@
 
 .logo-container {
     padding: 5px 5px;
-    background-color: #1C2541;
+    background-color: var(--text-color);
     border-radius: 5px;
 }
 
 .logo-moon {
-    color: #1F2937;
+    color: var(--base-color);
 }
 
 .icon-idioms {
@@ -81,7 +84,7 @@
 }
 
 .languaje-icon {
-    color: #7FC4F2;
+    color: var(--text-color);
 }
 
 .logo-idioms {
@@ -99,11 +102,11 @@
 }
 
 .theme-toggle-button {
-  background: none;
-  border: none;
-  padding: 20px 0 0 0;
-  cursor: pointer;
-  font: inherit;
+    background: none;
+    border: none;
+    padding: 20px 0 0 0;
+    cursor: pointer;
+    font: inherit;
 }
 
 .language-selector {

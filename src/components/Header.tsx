@@ -8,20 +8,31 @@ import { Link, useLocation } from 'react-router';
 import { Button } from "./Button";
 
 export const Header = () => {
-    const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
+    const [isDarkTheme, setIsDarkTheme] = useState<boolean>(() => localStorage.getItem('darkmode') === 'active');
     const { pathname } = useLocation();
 
+    useEffect(() => {
+        document.body.classList.toggle('darkmode', isDarkTheme)
+        localStorage.setItem('darkmode', isDarkTheme ? 'active' : '')
+    }, [isDarkTheme]);
+
     const toggleTheme = () => {
-        setIsDarkTheme(!isDarkTheme);
+        setIsDarkTheme((prev) => !prev);
     }
 
     return (
         <header>
-            <div className="main-container">
-                <nav className="options-container">
-                    <div className="img-container">
-                        <Link to="/">
-                            <img src={isDarkTheme ? img_light : img_dark} alt="LexDev - Diego Romero" className="logo-img" />
+            <div className='main-container'>
+                <nav className='options-container'>
+                    <div className='img-container'>
+                        <Link to='/'>
+                            {
+                                !isDarkTheme ? (
+                                    <img src={img_dark} alt='LexDev - Diego Romero' className='logo-img-dark' />
+                                ) : (
+                                    <img src={img_light} alt='LexDev - Diego Romero' className='logo-img-light' />
+                                )
+                            }
                         </Link>
                     </div>
 
