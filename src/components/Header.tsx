@@ -69,7 +69,7 @@ export const Header = () => {
                             <li className='logo-theme'>
                                 <button className='theme-toggle-button' onClick={toggleTheme}>
                                     <div className='logo-item-container'>
-                                        <div className='logo-theme-container'>{isDarkTheme ? <MoonIcon /> : <SunIcon />}</div>
+                                        <div className='logo-theme-container'>{isDarkTheme ? <SunIcon /> : <MoonIcon />}</div>
                                     </div>
                                 </button>
                             </li>
