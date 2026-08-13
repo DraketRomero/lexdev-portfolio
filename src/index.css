@@ -1,6 +1,35 @@
+:root {
+    --base-color: #BFE3FA;
+    --base-variant: #1E5A9C;
+    --text-color: #1C2541;
+    --secondary-text: #1C2541;
+    --primary-color: #BFE3FA;
+    --secondary-color: #1C2541;
+    --accent-color: #EAF6FF;
+}
+
+.darkmode {
+    --base-color: #1C2541;
+    --base-variant: #7FC4F2;
+    --text-color: #7FC4F2;
+    --secondary-text: #BFE3FA;
+    --primary-color: #1C2541;
+    --secondary-color: white;
+    --accent-color: #3E8FD6;
+}
+
+html {
+    font-family: 'JetBrains Mono', Poppins, monospace;
+}
+
 * {
     padding: 0;
     margin: 0;
-    background-color: #1C2541;
-    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    transition: background-color 0.3s, color 0.3s;
 }
