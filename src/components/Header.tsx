@@ -76,12 +76,13 @@ export const Header = () => {
 
                             <li className='logo-idioms'>
                                 <div className='idioms-container'>
-                                    <div>
+                                    <div className='select-wrapper'>
                                         <span className='icon-idioms'>{LanguageIcon}</span>
                                         <select className='language-selector'>
                                             <option>EN</option>
                                             <option>ES</option>
                                         </select>
+                                        <span className="select-arrow"></span>
                                     </div>
                                 </div>
                             </li>
