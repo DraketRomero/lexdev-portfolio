@@ -26,6 +26,12 @@
     transition: box-shadow 0.10s ease, transform 0.10s ease;
 }
 
+.button:hover {
+    color: var(--base-color);
+    background: var(--secondary-text);
+    border: 1px solid var(--base-color);
+}
+
 .button-unactive {
     box-shadow: none;
 }
