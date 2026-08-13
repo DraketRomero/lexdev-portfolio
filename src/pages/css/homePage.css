@@ -1,9 +1,39 @@
+.card-container {
+    width: 100%;
+    text-align: center;
+    padding: 80px 0 0 0;
+    color: var(--secondary-color);
+}
+
+.card-bisel {
+    padding: 70px 50px 70px 50px;
+    margin: 0 650px 0 650px;
+}
+
+.profile-image-container {
+    padding: 0 0 50px 0;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    object-fit: contain;
+}
+
+.gretting {
+    color: var(--secondary-color);
+    padding: 0 0 20px 0;
+    font-size: 33px;
+    font-weight: bolder;
+}
+
 .role {
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .word {
-    color: #7FC4F2;
+    color: var(--base-variant);
     transition: opacity 300ms ease;
     opacity: 1;
 }
@@ -12,15 +42,36 @@
     opacity: 0;
 }
 
-.social-link { color: white; }
-.social-link:hover { color: #3E8FD6; }
+.icons-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 0 0;
+}
 
-.bisel-elevado {
-  background: #1C2541;
-  border-radius: 8px;
-  box-shadow:
-    -1px -3px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 6px rgba(0, 0, 0, 0.4);
+.social-link {
+    color: var(--secondary-color);
+}
+
+.social-link:hover {
+    color: var(--base-variant)
+}
+
+.icon-file-container {
+    padding: 14px 10px 10px 10px;
+    cursor: pointer;
+    margin: 0 15px 0 15px;
+}
+
+.icon-gb-container {
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    margin: 0 15px 0 15px;
+}
+
+.icon-li-container {
+    padding: 10px 10px 0 10px;
+    cursor: pointer;
+    margin: 0 15px 0 15px;
 }
 
 .button-homepage {

@@ -3,16 +3,21 @@
 }
 
 .button-container {
-    margin: 40px 0 0 0;
+    margin: 46px 0 0 0;
+}
+
+.button-header {
+    padding: 12px 25px;
 }
 
 .button {
-    border: 1px solid #7FC4F2;
+    border: 1px solid var(--text-color);
     border-radius: 9px;
-    color: #7FC4F2;
+    color: var(--secondary-text);
+    background: var(--base-color);
     cursor: pointer;
-    box-shadow: 3px 4px #7FC4F2;
-    margin: 0 20px 0 0;
+    box-shadow: 3px 4px var(--text-color);
+    margin: 2px 20px 0 0;
 }
 
 .button:active {
@@ -27,17 +32,13 @@
 
 .navlink-config {
     text-decoration: none;
-    color: #EAF6FF;
+    color: var(--accent-color);
 }
 
 .navlink-config:hover {
-    color: #7FC4F2;
+    color: var(--accent-color);
 }
 
 .navlink-config:visited {
-    color: #EAF6FF;
-}
-
-.navlink-config:active {
-    color: #EAF6FF;
+    color: var(--secondary-text);
 }
