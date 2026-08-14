@@ -3,9 +3,9 @@ import { MoonIcon, SunIcon } from '../assets/icons';
 import './css/header.css';
 import img_dark from './../assets/img/logo-dark-theme.png';
 import img_light from './../assets/img/logo-light-theme.png';
-import { LanguageIcon } from '../assets/icons/LanguageIcon';
 import { Link, useLocation } from 'react-router';
 import { Button } from './Button';
+import { LanguageSelector } from './LanguageSelector';
 
 export const Header = () => {
     const [isDarkTheme, setIsDarkTheme] = useState<boolean>(() => localStorage.getItem('darkmode') === 'active');
@@ -76,14 +76,7 @@ export const Header = () => {
 
                             <li className='logo-idioms'>
                                 <div className='idioms-container'>
-                                    <div className='select-wrapper'>
-                                        <span className='icon-idioms'>{LanguageIcon}</span>
-                                        <select id='select-idioms' className='language-selector'>
-                                            <option>EN</option>
-                                            <option>ES</option>
-                                        </select>
-                                        <span className="select-arrow"></span>
-                                    </div>
+                                    <LanguageSelector />
                                 </div>
                             </li>
                         </ul>
