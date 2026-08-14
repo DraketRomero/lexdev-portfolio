@@ -14,14 +14,12 @@ export const Button = ({ className, routeName, routeDestination, active }: Butto
     const [isPressed, setIsPressed] = useState<boolean>(false);
 
     return (
-        <div className="button-container">
-            <NavLink to={routeDestination}>
-                <button className={`button menu-option ${className} ${isPressed && active ? 'button-unactive' : ''}`}
-                    onMouseDown={() => setIsPressed(true)}
-                >
-                    {routeName}
-                </button>
-            </NavLink>
-        </div>
+        <NavLink to={routeDestination}>
+            <button className={`button menu-option ${className} ${isPressed && active ? 'button-unactive' : ''}`}
+                onMouseDown={() => setIsPressed(true)}
+            >
+                {routeName}
+            </button>
+        </NavLink>
     )
 }
