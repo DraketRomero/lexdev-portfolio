@@ -46,7 +46,7 @@ export const HomePage = () => {
                 </div>
 
                 <div>
-                    <p className='gretting'>Hola <span className='wave-icon'>👋</span>!, Soy Diego Romero</p>
+                    <p className='gretting'>Hola <span className='wave-icon'>👋</span>!, Soy <span className='word'>Diego Romero</span></p>
                     <p className='role'>
                         Senior  
                         <span 
