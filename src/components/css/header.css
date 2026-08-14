@@ -45,7 +45,7 @@
 
 .logo-theme {
     margin: 20px 0 0 0;
-    padding: 10px 15px 20px 25px;
+    padding: 10px 10px 20px 15px;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
@@ -65,12 +65,16 @@
 
 .logo-container {
     padding: 5px 5px;
-    background-color: var(--text-color);
     border-radius: 5px;
 }
 
-.logo-moon {
+.logo-container:hover {
+    background-color: var(--text-color);
     color: var(--base-color);
+}
+
+.logo-moon {
+    color: grey;
 }
 
 .icon-idioms {
