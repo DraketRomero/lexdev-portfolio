@@ -24,7 +24,7 @@ export const Header = () => {
                 <nav className='options-container'>
                     <div className='img-container'>
                         <Link to='/' className='name'>
-                            <span className='role word'>DraketDev</span>
+                            <span className='role word name'>DraketDev</span>
                         </Link>
                     </div>
 
