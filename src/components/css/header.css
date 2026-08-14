@@ -32,7 +32,11 @@
 }
 
 .img-container {
-    margin: 19px 0 0 120px;
+    margin: 47px 0 0 120px;
+}
+
+.name {
+    text-decoration: none;
 }
 
 .list-item {
