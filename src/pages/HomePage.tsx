@@ -1,13 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import bunnie from './../assets/img/bunnie2.webp';
 import './css/homePage.css'
 import { DownloadDocumentIcon, GithubIcon, LinkedInIcon } from '../assets/icons';
-import { Button } from '../components/Button';
+import { CopyClipboardIcon } from '../assets/icons/CopyClipboardIcon';
+import { CheckIcon } from '../assets/icons/CheckIcon';
 
 export const HomePage = () => {
     const words = ['Full Stack', 'Software'];
     const [index, setIndex] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
+
+    const [email] = useState<string>('draketromero@gmail.com');
+    const [copied, setCopied] = useState<boolean>(false);
+    const timeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -24,6 +29,14 @@ export const HomePage = () => {
         }
     };
 
+    const handleCopy = async () => {
+        await navigator.clipboard.writeText(email);
+        setCopied(true);
+
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = setTimeout(() => setCopied(false), 2000);
+    };
+
     return (
         <div className='card-container'>
             <div className='card-bisel'>
@@ -37,20 +50,40 @@ export const HomePage = () => {
                 </div>
 
                 <div className='icons-container'>
-                    <div className='icon-file-container'>
-                        <a href="" download={"CV-diegoromero.pdf"} rel="noopener noreferrer" className="social-link">
-                            {DownloadDocumentIcon}
-                        </a>
-                    </div>
-                    <div className='icon-gb-container'>
-                        <a href="https://github.com/DraketRomero" target="_blank" rel="noopener noreferrer" className="social-link">
-                            {GithubIcon}
-                        </a>
-                    </div>
-                    <div className='icon-li-container'>
-                        <a href="https://www.linkedin.com/in/rdiego-romero/" target="_blank" rel="noopener noreferrer" className="social-link">
-                            {LinkedInIcon}
-                        </a>
+                    <div className='icons'>
+                        <div className='document-button-container'>
+                            <a href='/cv-diegoromero.pdf' target='_blank' rel='noopener noreferrer' className="document-link">
+                                <div className='document-icon'>
+                                    <DownloadDocumentIcon />
+                                </div>
+
+                                <span className='document-text'>
+                                    Ver CV
+                                </span>
+                            </a>
+                        </div>
+                        <div className='icon-gb-container'>
+                            <a href='https://github.com/DraketRomero' target='_blank' rel='noopener noreferrer' className='social-link'>
+                                {GithubIcon}
+                            </a>
+                        </div>
+                        <div className='icon-li-container'>
+                            <a href='https://www.linkedin.com/in/rdiego-romero/' target='_blank' rel='noopener noreferrer' className='social-link'>
+                                {LinkedInIcon}
+                            </a>
+                        </div>
+
+                        <div className='button-email-container'>
+                            <div className='data-contact-container' onClick={handleCopy}>
+                                <div className='email-container'>
+                                    {email}
+                                </div>
+
+                                <div className='icon-clipboard'>
+                                    {copied ? <CheckIcon className='icon-pop' /> : <CopyClipboardIcon className='icon-pop' />}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
