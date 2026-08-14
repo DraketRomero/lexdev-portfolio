@@ -38,7 +38,7 @@ export const Header = () => {
 
                     <div>
                         <ul className='list-group'>
-                            <li>
+                            <li className='list-item'>
                                 <Button
                                     className='menu-option button-header'
                                     routeName='Proyectos'
@@ -48,7 +48,7 @@ export const Header = () => {
                             </li>
 
 
-                            <li>
+                            <li className='list-item'>
                                 <Button
                                     className='menu-option button-header'
                                     routeName='Experiencia'
@@ -57,7 +57,7 @@ export const Header = () => {
                                 />
                             </li>
 
-                            <li>
+                            <li className='list-item'>
                                 <Button
                                     className='menu-option button-header'
                                     routeName='Sobre mi'
