@@ -29,19 +29,39 @@
 }
 
 .wave-icon {
-  display: inline-block;
-  transform-origin: 70% 70%;
-  animation: wave 1s ease-in-out;
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave 1s ease-in-out;
 }
 
 @keyframes wave {
-  0%   { transform: rotate(3deg); }
-  15%  { transform: rotate(17deg); }
-  30%  { transform: rotate(-11deg); }
-  45%  { transform: rotate(17deg); }
-  60%  { transform: rotate(-7deg); }
-  75%  { transform: rotate(11deg); }
-  100% { transform: rotate(3deg); }
+    0% {
+        transform: rotate(3deg);
+    }
+
+    15% {
+        transform: rotate(17deg);
+    }
+
+    30% {
+        transform: rotate(-11deg);
+    }
+
+    45% {
+        transform: rotate(17deg);
+    }
+
+    60% {
+        transform: rotate(-7deg);
+    }
+
+    75% {
+        transform: rotate(11deg);
+    }
+
+    100% {
+        transform: rotate(3deg);
+    }
 }
 
 .role {
