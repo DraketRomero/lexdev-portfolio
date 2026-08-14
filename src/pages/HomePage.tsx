@@ -41,12 +41,19 @@ export const HomePage = () => {
         <div className='card-container'>
             <div className='card-bisel'>
                 <div className='profile-image-container' >
-                    <img src={bunnie} alt="imagen" className='profile-image'/>
+                    <img src={bunnie} alt='imagen' className='profile-image' />
                 </div>
 
                 <div>
-                    <p className='gretting'>Hola!👋, Soy Diego Romero</p>
-                    <p className="role">Senior <span className={`word ${isVisible ? '' : 'hidden'}`} onTransitionEnd={handleTransitionEnd}>{words[index]}</span> Engineer</p>
+                    <p className='gretting'>Hola <span className='wave-icon'>👋</span>!, Soy Diego Romero</p>
+                    <p className='role'>
+                        Senior  
+                        <span 
+                            className={`word ${isVisible ? '' : 'hidden'}`} 
+                            onTransitionEnd={handleTransitionEnd}>{` ${words[index]} `} 
+                        </span> 
+                         Engineer
+                     </p>
                 </div>
 
                 <div className='icons-container'>
