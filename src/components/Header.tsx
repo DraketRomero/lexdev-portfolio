@@ -78,7 +78,7 @@ export const Header = () => {
                                 <div className='idioms-container'>
                                     <div className='select-wrapper'>
                                         <span className='icon-idioms'>{LanguageIcon}</span>
-                                        <select className='language-selector'>
+                                        <select id='select-idioms' className='language-selector'>
                                             <option>EN</option>
                                             <option>ES</option>
                                         </select>
