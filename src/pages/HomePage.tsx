@@ -82,7 +82,7 @@ export const HomePage = () => {
 
                         <div className='button-email-container'>
                             <div className='data-contact-container' onClick={handleCopy}>
-                                <div className='email-container'>
+                                <div>
                                     {email}
                                 </div>
 
