@@ -26,7 +26,6 @@
 .button:hover {
     color: var(--base-color);
     background: var(--secondary-text);
-    border: 1px solid var(--base-color);
 }
 
 .button-unactive {
