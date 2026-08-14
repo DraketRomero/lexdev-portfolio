@@ -1,0 +1,42 @@
+.document-button-container {
+    padding: 9px 40px 10px 10px;
+    cursor: pointer;
+    margin: 2px 5px 0 5px;
+}
+
+.document-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: small;
+    color: var(--secondary-text);
+    text-decoration: none;
+    border: 1px solid var(--secondary-text);
+    border-radius: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    box-shadow: 3px 4px var(--text-color);
+    transition: color 0.15s ease, border-color 0.15s ease;
+    width: 100%;
+}
+
+.document-link:hover {
+    color: var(--base-color);
+    background: var(--secondary-text);
+}
+
+.document-link:active {
+    box-shadow: none;
+    transform: translateY(4px);
+    transition: box-shadow 0.10s ease, transform 0.10s ease;
+}
+
+.document-icon {
+    display: flex;
+    align-items: center;
+}
+
+.document-text {
+    padding-left: 12px;
+    border-left: 1px solid currentColor;
+}
