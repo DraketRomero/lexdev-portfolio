@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { MoonIcon, SunIcon } from '../assets/icons';
 import './css/header.css';
-import img_dark from './../assets/img/logo-dark-theme.png';
-import img_light from './../assets/img/logo-light-theme.png';
 import { Link, useLocation } from 'react-router';
 import { Button } from './Button';
 import { LanguageSelector } from './LanguageSelector';
@@ -25,14 +23,8 @@ export const Header = () => {
             <div className='main-container'>
                 <nav className='options-container'>
                     <div className='img-container'>
-                        <Link to='/'>
-                            {
-                                !isDarkTheme ? (
-                                    <img src={img_dark} alt='LexDev - Diego Romero' className='logo-img-dark' />
-                                ) : (
-                                    <img src={img_light} alt='LexDev - Diego Romero' className='logo-img-light' />
-                                )
-                            }
+                        <Link to='/' className='name'>
+                            <span className='role word'>DraketDev</span>
                         </Link>
                     </div>
 
