@@ -53,16 +53,7 @@ export const HomePage = () => {
                         </a>
                     </div>
                 </div>
-
-                <div>
-                    <Button
-                        className='menu-option button-homepage'
-                        routeName="Contactar"
-                        routeDestination="/contact"
-                    />
-                </div>
             </div>
-
         </div>
     )
 }
