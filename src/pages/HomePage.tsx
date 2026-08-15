@@ -5,6 +5,8 @@ import { DownloadDocumentIcon, GithubIcon, LinkedInIcon } from '../assets/icons'
 import { CopyClipboardIcon } from '../assets/icons/CopyClipboardIcon';
 import { CheckIcon } from '../assets/icons/CheckIcon';
 import { ButtonIcon } from '../components/ButtonIcon';
+import { ContactIcon } from '../assets/icons/ContactIcon';
+import { Link } from 'react-router';
 
 export const HomePage = () => {
     const words = ['Full Stack', 'Software'];
@@ -62,6 +64,18 @@ export const HomePage = () => {
                         <ButtonIcon href='/cv-diegoromero.pdf' text='Ver CV' icon={<DownloadDocumentIcon />} />
                         <ButtonIcon href='https://www.linkedin.com/in/rdiego-romero/' text='LinkedIn' icon={<LinkedInIcon />} />
                         <ButtonIcon href='https://github.com/DraketRomero' text='Github' icon={<GithubIcon />} />
+
+                        <div className='document-button-container'>
+                            <Link to='/contact' className="document-link" viewTransition>
+                                <div className='document-icon'>
+                                    <ContactIcon />
+                                </div>
+
+                                <span className='document-text'>
+                                    Contactemos!
+                                </span>
+                            </Link>
+                        </div>
 
                         <div className='button-email-container'>
                             <div className='data-contact-container' onClick={handleCopy}>
