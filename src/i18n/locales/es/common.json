@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "aboutMe": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola",
+    "pronoun": " !, Soy ",
+    "name": "Diego Romero"
+  },
+  "buttonText": {
+    "cv": "Ver CV",
+    "contact": "Contactemos!"
+  }
+}

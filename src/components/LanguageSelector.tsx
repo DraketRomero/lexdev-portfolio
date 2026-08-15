@@ -1,7 +1,8 @@
 import './css/languageSelector.css';
 import { LanguageIcon } from '../assets/icons';
-
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 const LANGUAGES = [
     { code: 'EN', label: 'EN' },
@@ -9,11 +10,14 @@ const LANGUAGES = [
 ];
 
 export const LanguageSelector = () => {
+    const { i18n } = useTranslation();
+    
     const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState('ES');
+    const [selected, setSelected] = useState(i18n.language.toUpperCase());
     const wrapperRef = useRef<HTMLDivElement>(null);
     const buttonRef = useRef<HTMLButtonElement>(null);
     const optionRefs = useRef<(HTMLButtonElement | null)[]>([]);
+
 
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
@@ -43,7 +47,7 @@ export const LanguageSelector = () => {
         setSelected(code);
         setIsOpen(false);
         buttonRef.current?.focus();
-        // aquí conectas tu lógica real de i18n
+        i18n.changeLanguage(code.toLowerCase());
     };
 
     const handleButtonKeyDown = (e: React.KeyboardEvent) => {

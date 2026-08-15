@@ -7,8 +7,10 @@ import { CheckIcon } from '../assets/icons/CheckIcon';
 import { ButtonIcon } from '../components/ButtonIcon';
 import { ContactIcon } from '../assets/icons/ContactIcon';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 export const HomePage = () => {
+    const { t } = useTranslation();
     const words = ['Full Stack', 'Software'];
     const [index, setIndex] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
@@ -48,7 +50,7 @@ export const HomePage = () => {
                 </div>
 
                 <div>
-                    <p className='gretting'>Hola <span className='wave-icon'>👋</span>!, Soy <span className='word'>Diego Romero</span></p>
+                    <p className='gretting'>{t('hero.greeting')} <span className='wave-icon'>👋</span>{t('hero.pronoun')}<span className='word'>{t('hero.name')}</span></p>
                     <p className='role'>
                         Senior  
                         <span 
@@ -61,7 +63,7 @@ export const HomePage = () => {
 
                 <div className='icons-container'>
                     <div className='icons'>
-                        <ButtonIcon href='/cv-diegoromero.pdf' text='Ver CV' icon={<DownloadDocumentIcon />} />
+                        <ButtonIcon href='/cv-diegoromero.pdf' text={t('buttonText.cv')} icon={<DownloadDocumentIcon />} />
                         <ButtonIcon href='https://www.linkedin.com/in/rdiego-romero/' text='LinkedIn' icon={<LinkedInIcon />} />
                         <ButtonIcon href='https://github.com/DraketRomero' text='Github' icon={<GithubIcon />} />
 
@@ -71,8 +73,8 @@ export const HomePage = () => {
                                     <ContactIcon />
                                 </div>
 
-                                <span className='document-text'>
-                                    Contactemos!
+                                <span className='document-text document-text-span'>
+                                    {t('buttonText.contact')}
                                 </span>
                             </Link>
                         </div>

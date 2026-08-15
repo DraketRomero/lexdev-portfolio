@@ -4,10 +4,12 @@ import './css/header.css';
 import { Link, useLocation } from 'react-router';
 import { Button } from './Button';
 import { LanguageSelector } from './LanguageSelector';
+import { useTranslation } from 'react-i18next';
 
 export const Header = () => {
     const [isDarkTheme, setIsDarkTheme] = useState<boolean>(() => localStorage.getItem('darkmode') === 'active');
     const { pathname } = useLocation();
+    const { t } = useTranslation();
 
     useEffect(() => {
         document.body.classList.toggle('darkmode', isDarkTheme)
@@ -33,7 +35,7 @@ export const Header = () => {
                             <li className='list-item'>
                                 <Button
                                     className='menu-option button-header'
-                                    routeName='Proyectos'
+                                    routeName={t('nav.projects')}
                                     routeDestination='/projects'
                                     active={pathname == '/projects'}
                                 />
@@ -43,7 +45,7 @@ export const Header = () => {
                             <li className='list-item'>
                                 <Button
                                     className='menu-option button-header'
-                                    routeName='Experiencia'
+                                    routeName={t('nav.experience')}
                                     routeDestination='/experience'
                                     active={pathname == '/experience'}
                                 />
@@ -52,7 +54,7 @@ export const Header = () => {
                             <li className='list-item'>
                                 <Button
                                     className='menu-option button-header'
-                                    routeName='Sobre mi'
+                                    routeName={t('nav.aboutMe')}
                                     routeDestination='/about-me'
                                     active={pathname == '/about-me'}
                                 />
@@ -61,7 +63,7 @@ export const Header = () => {
                             <li className='list-item'>
                                 <Button
                                     className='menu-option button-header'
-                                    routeName='Contactar'
+                                    routeName={t('nav.contact')}
                                     routeDestination='/contact'
                                     active={pathname == '/contact'}
                                 />
