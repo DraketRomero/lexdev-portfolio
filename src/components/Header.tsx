@@ -58,6 +58,15 @@ export const Header = () => {
                                 />
                             </li>
 
+                            <li className='list-item'>
+                                <Button
+                                    className='menu-option button-header'
+                                    routeName='Contactar'
+                                    routeDestination='/contact'
+                                    active={pathname == '/contact'}
+                                />
+                            </li>
+
                             <li className='logo-theme'>
                                 <button className='theme-toggle-button' onClick={toggleTheme}>
                                     <div className='logo-item-container'>
