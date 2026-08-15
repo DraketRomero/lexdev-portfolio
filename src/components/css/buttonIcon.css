@@ -40,3 +40,7 @@
     padding-left: 12px;
     border-left: 1px solid currentColor;
 }
+
+.document-text-span {
+    width: 102px;
+}
