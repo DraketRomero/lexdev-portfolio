@@ -23,7 +23,7 @@ export const Header = () => {
             <div className='main-container'>
                 <nav className='options-container'>
                     <div className='img-container'>
-                        <Link to='/' className='name'>
+                        <Link to='/' className='name' viewTransition>
                             <span className='role word name'>DraketDev</span>
                         </Link>
                     </div>

@@ -14,7 +14,7 @@ export const Button = ({ className, routeName, routeDestination, active }: Butto
     const [isPressed, setIsPressed] = useState<boolean>(false);
 
     return (
-        <NavLink to={routeDestination}>
+        <NavLink to={routeDestination} viewTransition>
             <button className={`button menu-option ${className} ${isPressed && active ? 'button-unactive' : ''}`}
                 onMouseDown={() => setIsPressed(true)}
             >
