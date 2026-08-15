@@ -37,3 +37,11 @@ body {
     color: var(--accent-color);
     transition: background-color 0.3s, color 0.3s;
 }
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    font-size: 12px;
+}
