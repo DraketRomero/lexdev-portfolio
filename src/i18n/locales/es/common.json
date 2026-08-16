@@ -8,10 +8,27 @@
   "hero": {
     "greeting": "Hola",
     "pronoun": "!, Soy ",
-    "name": "Diego Romero"
+    "name": "Diego Romero",
+    "description": "Diseño y desarrollo software escalable, sistemas distribuidos y aplicaciones inteligentes, desde backends de alto rendimiento y plataformas web modernas hasta infraestructura en la nube y ",
+    "ai": "soluciones basadas en IA.",
+    "extra": "Más de 6 años convirtiendo problemas de ingeniería complejos en sistemas listos para su implementación en producción.",
+    "workmode": {
+      "notice": {
+        "title": "Disponible para",
+        "mode": "Remoto · Hibrido"
+      },
+      "path": {
+        "title": "Trayectoria",
+        "job": "DAW · Agos. 2026"
+      },
+      "focus": {
+        "title": "Enfoque",
+        "focus": "Full Stack · IA"
+      }
+    }
   },
   "buttonText": {
-    "cv": "Ver CV",
+    "cv": "Descargar CV",
     "contact": "Contactemos!"
   }
 }

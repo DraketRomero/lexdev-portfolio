@@ -8,10 +8,27 @@
   "hero": {
     "greeting": "Hi",
     "pronoun": "!, I'm ",
-    "name": "Diego Romero"
+    "name": "Diego Romero",
+    "description": "I design and build scalable software, distributed systems, and intelligent applications, from high-performance backends and modern web platforms to cloud infrastructure and ",
+    "ai": "AI-powered solutions.",
+    "extra": "6+ years turning complex engineering problems into production-ready systems.",
+    "workmode": {
+      "notice": {
+        "title": "Open to",
+        "mode": "Remote · Hybrid"
+      },
+      "path": {
+        "title": "Path",
+        "job": "DWA · Agust 2026"
+      },
+      "focus": {
+        "title": "Focus",
+        "focus": "Full Stack · AI"
+      }
+    }
   },
   "buttonText": {
-    "cv": "See CV",
+    "cv": "Download CV",
     "contact": "Get in touch!"
   }
 }
