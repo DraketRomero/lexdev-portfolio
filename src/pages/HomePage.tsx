@@ -53,14 +53,44 @@ export const HomePage = () => {
                 <div>
                     <p className='gretting'>{t('hero.greeting')} <span className='wave-icon'>👋</span>{t('hero.pronoun')}<span className='word'>{t('hero.name')}</span></p>
                     <p className='role'>
-                        Senior  
-                        <span 
-                            className={`word ${isVisible ? '' : 'hidden'}`} 
-                            onTransitionEnd={handleTransitionEnd}>{` ${words[index]} `} 
-                        </span> 
-                         Engineer
-                     </p>
+                        Senior
+                        <span
+                            className={`word ${isVisible ? '' : 'hidden'}`}
+                            onTransitionEnd={handleTransitionEnd}>{` ${words[index]} `}
+                        </span>
+                        Engineer
+                    </p>
+
+                    <div className='description-container'>
+                        <p className='description-text'>
+                            {t('hero.description')}
+                            <span className='description-text-tech'>{t('hero.ai')}</span>
+                        </p>
+
+                        <p className='description-text-experience'>
+                            <StarIcon />
+                            <span>
+                                {t('hero.extra')}
+                            </span>
+                        </p>
+
+                        <ul className='lista-info'>
+                            <li className='lista-info-item line'>
+                                <span className='text'>{t('hero.workmode.notice.title')}</span>
+                                <span>{t('hero.workmode.notice.mode')}</span>
+                            </li>
+                            <li className='lista-info-item line'>
+                                <span className='text'>{t('hero.workmode.path.title')}</span>
+                                <span>{t('hero.workmode.path.job')}</span>
+                            </li>
+                            <li className='lista-info-item'>
+                                <span className='text'>{t('hero.workmode.focus.title')}</span>
+                                <span>{t('hero.workmode.focus.focus')}</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
 
                 <div className='icons-container'>
                     <div className='icons'>

@@ -79,6 +79,65 @@
     opacity: 0;
 }
 
+.description-container {
+    width: 800px;
+}
+
+.description-text {
+    padding: 40px 0 0 0;
+    text-align: left;
+    color: var(--secondary-text);
+    font-size: 1.3rem;
+
+    display: -webkit-box;
+    /* -webkit-box-orient: vertical; */
+    overflow: hidden;
+}
+
+.description-text-tech {
+    font-family: 'Fraunces';
+    font-style: italic;
+    color: var(--base-variant);
+}
+
+.description-text-experience {
+    padding: 20px 10px 5px 0;
+    text-align: left;
+    color: var(--secondary-text);
+    font-family: 'Fraunces';
+    font-style: italic;
+    width: max-content;
+}
+
+.icon-description {
+    padding: 30px 10px 0 0;
+    color: var(--base-variant);
+}
+
+.lista-info {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 1.25rem;
+}
+
+.lista-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.line {
+    border-right: 1px solid var(--text-color);
+}
+
+.text {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
 .icons-container {
     padding: 50px 0 0 0;
 }
