@@ -92,33 +92,32 @@ export const HomePage = () => {
                 </div>
             </div>
 
-                <div className='icons-container'>
-                    <div className='icons'>
-                        <ButtonIcon href='/cv-diegoromero.pdf' text={t('buttonText.cv')} icon={<DownloadDocumentIcon />} />
-                        <ButtonIcon href='https://www.linkedin.com/in/rdiego-romero/' text='LinkedIn' icon={<LinkedInIcon />} />
-                        <ButtonIcon href='https://github.com/DraketRomero' text='Github' icon={<GithubIcon />} />
+            <div className='icons-container'>
+                <div className='icons'>
+                    <ButtonIcon href='/cv-diegoromero.pdf' text={t('buttonText.cv')} icon={<DownloadDocumentIcon />} />
+                    <ButtonIcon href='https://www.linkedin.com/in/rdiego-romero/' text='LinkedIn' icon={<LinkedInIcon />} />
+                    <ButtonIcon href='https://github.com/DraketRomero' text='Github' icon={<GithubIcon />} />
 
-                        <div className='document-button-container'>
-                            <Link to='/contact' className="document-link" viewTransition>
-                                <div className='document-icon'>
-                                    <ContactIcon />
-                                </div>
+                    <div className='document-button-container'>
+                        <Link to='/contact' className="document-link" viewTransition>
+                            <div className='document-icon'>
+                                <ContactIcon />
+                            </div>
 
-                                <span className='document-text document-text-span'>
-                                    {t('buttonText.contact')}
-                                </span>
-                            </Link>
-                        </div>
+                            <span className='document-text document-text-span'>
+                                {t('buttonText.contact')}
+                            </span>
+                        </Link>
+                    </div>
 
-                        <div className='button-email-container'>
-                            <div className='data-contact-container' onClick={handleCopy}>
-                                <div>
-                                    {email}
-                                </div>
+                    <div className='button-email-container'>
+                        <div className='data-contact-container' onClick={handleCopy}>
+                            <div>
+                                {email}
+                            </div>
 
-                                <div className='icon-clipboard'>
-                                    {copied ? <CheckIcon className='icon-pop' /> : <CopyClipboardIcon className='icon-pop' />}
-                                </div>
+                            <div className='icon-clipboard'>
+                                {copied ? <CheckIcon className='icon-pop' /> : <CopyClipboardIcon className='icon-pop' />}
                             </div>
                         </div>
                     </div>
