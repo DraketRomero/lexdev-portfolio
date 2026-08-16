@@ -50,7 +50,7 @@ export const HomePage = () => {
                     <img src={bunnie} alt='imagen' className='profile-image' />
                 </div>
 
-                <div>
+                <div className='dev-info'>
                     <p className='gretting'>{t('hero.greeting')} <span className='wave-icon'>👋</span>{t('hero.pronoun')}<span className='word'>{t('hero.name')}</span></p>
                     <p className='role'>
                         Senior
