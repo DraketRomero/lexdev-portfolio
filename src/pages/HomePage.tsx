@@ -12,7 +12,7 @@ import { StarIcon } from '../assets/icons/StarIcon';
 
 export const HomePage = () => {
     const { t } = useTranslation();
-    const words = ['Full Stack', 'Software'];
+    const words = ['Full Stack', 'Software', 'AI'];
     const [index, setIndex] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
 
