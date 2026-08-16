@@ -30,7 +30,7 @@ export const Header = () => {
                         </Link>
                     </div>
 
-                    <div>
+                    <div className='nav-options'>
                         <ul className='list-group'>
                             <li className='list-item'>
                                 <Button

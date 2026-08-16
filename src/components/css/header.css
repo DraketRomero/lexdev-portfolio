@@ -8,18 +8,8 @@
     justify-content: space-between;
 }
 
-.logo-img-light {
-    border-radius: 200px;
-    height: 60px;
-    cursor: pointer;
-    margin: 28px 0 0 17px;
-}
-
-.logo-img-dark {
-    border-radius: 200px;
-    height: 70px;
-    cursor: pointer;
-    margin: 20px 0 0 0;
+.nav-options {
+    margin: 0 332px 0 0;
 }
 
 .list-group {
