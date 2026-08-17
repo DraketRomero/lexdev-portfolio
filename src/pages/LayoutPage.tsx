@@ -7,7 +7,9 @@ export const LayoutPage = () => {
             <Header />
 
             <main>
-                <Outlet />
+                <section id="main-content">
+                    <Outlet />
+                </section>
             </main>
         </>
     );
