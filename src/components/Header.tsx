@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
-import { MoonIcon, SunIcon } from '../assets/icons';
+import { BurgerIcon, CloseIcon, MoonIcon, SunIcon } from '../assets/icons';
 import './css/header.css';
 import { Link, useLocation } from 'react-router';
 import { Button } from './Button';
 import { LanguageSelector } from './LanguageSelector';
 import { useTranslation } from 'react-i18next';
+import { LanguageSelectorSwitch } from './LanguageSelectorSwitch';
 
 export const Header = () => {
     const [isDarkTheme, setIsDarkTheme] = useState<boolean>(() => localStorage.getItem('darkmode') === 'active');
+    const [isOpen, setIsOpen] = useState<boolean>(true);
     const { pathname } = useLocation();
     const { t } = useTranslation();
 
@@ -20,17 +22,29 @@ export const Header = () => {
         setIsDarkTheme((prev) => !prev);
     }
 
+    const handleShowMenuBurguerOptions = () => setIsOpen((prev) => !prev);
+
     return (
-        <header>
-            <div className='main-container'>
-                <nav className='options-container'>
+        <header style={{ zIndex: "20" }}>
+            <div className='container'>
+                <nav className='nav-container'>
                     <div className='img-container'>
                         <Link to='/' className='name' viewTransition>
                             <span className='role word name'>DraketDev</span>
                         </Link>
                     </div>
 
-                    <div className='nav-options'>
+
+                    <div className='burger-container'>
+                        <button className='burger-button' onClick={handleShowMenuBurguerOptions}>
+                            {
+                                isOpen ? <BurgerIcon /> : <CloseIcon />
+                            }
+                        </button>
+                    </div>
+
+
+                    <div className={`nav-options ${isOpen ? '' : 'nav-options-open'}`}>
                         <ul className='list-group'>
                             <li className='list-item'>
                                 <Button
@@ -40,7 +54,6 @@ export const Header = () => {
                                     active={pathname == '/projects'}
                                 />
                             </li>
-
 
                             <li className='list-item'>
                                 <Button
@@ -70,16 +83,20 @@ export const Header = () => {
                             </li>
 
                             <li className='logo-theme'>
-                                <button className='theme-toggle-button' onClick={toggleTheme}>
-                                    <div className='logo-item-container'>
-                                        <div className='logo-theme-container'>{isDarkTheme ? <SunIcon /> : <MoonIcon />}</div>
-                                    </div>
-                                </button>
-                            </li>
+                                <div>
+                                    <button className='theme-toggle-button' onClick={toggleTheme}>
+                                        <div className='logo-item-container'>
+                                            <div className='logo-theme-container'>{isDarkTheme ? <SunIcon /> : <MoonIcon />}</div>
+                                        </div>
+                                    </button>
+                                </div>
 
-                            <li className='logo-idioms'>
                                 <div className='idioms-container'>
                                     <LanguageSelector />
+                                </div>
+
+                                <div className='idioms-container-switch'>
+                                    <LanguageSelectorSwitch />
                                 </div>
                             </li>
                         </ul>
