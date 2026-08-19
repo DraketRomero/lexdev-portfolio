@@ -77,15 +77,15 @@ export const HomePage = () => {
                         <ul className='lista-info'>
                             <li className='lista-info-item line'>
                                 <span className='text'>{t('hero.workmode.notice.title')}</span>
-                                <span>{t('hero.workmode.notice.mode')}</span>
+                                <span style={{ fontSize: "12px" }}>{t('hero.workmode.notice.mode')}</span>
                             </li>
                             <li className='lista-info-item line'>
                                 <span className='text'>{t('hero.workmode.path.title')}</span>
-                                <span>{t('hero.workmode.path.job')}</span>
+                                <span style={{ fontSize: "12px" }}>{t('hero.workmode.path.job')}</span>
                             </li>
                             <li className='lista-info-item'>
                                 <span className='text'>{t('hero.workmode.focus.title')}</span>
-                                <span>{t('hero.workmode.focus.focus')}</span>
+                                <span style={{ fontSize: "12px" }}>{t('hero.workmode.focus.focus')}</span>
                             </li>
                         </ul>
                     </div>
