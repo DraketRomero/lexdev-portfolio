@@ -1,5 +1,6 @@
 export { BurgerIcon } from './BurgerIcon';
 export { CheckIcon } from './CheckIcon';
+export { CloseIcon } from "./CloseIcon";
 export { ContactIcon } from './ContactIcon';
 export { CopyClipboardIcon } from './CopyClipboardIcon';
 export { DownloadDocumentIcon } from './DownloadDocumentIcon';
