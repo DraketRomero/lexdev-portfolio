@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 
 export const LayoutPage = () => {
     return (
@@ -11,6 +12,10 @@ export const LayoutPage = () => {
                     <Outlet />
                 </section>
             </main>
+
+            <footer>
+                <Footer />
+            </footer>
         </>
     );
 }
