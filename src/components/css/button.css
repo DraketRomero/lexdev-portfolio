@@ -1,21 +1,4 @@
-.button-container {
-    /* margin: 46px 0 0 0; */
-}
-
-.button-header {
-    /* padding: 12px 25px;
-    margin: 46px 0 0 0; */
-}
-
 .button {
-    /* border: 1px solid var(--text-color);
-    border-radius: 9px;
-    color: var(--secondary-text);
-    background: var(--base-color);
-    cursor: pointer;
-    box-shadow: 3px 4px var(--text-color);
-    margin: 2px 20px 0 0; */
-
     color: var(--secondary-text);
     background: var(--base-color);
     border: none;
@@ -23,39 +6,6 @@
     padding: 5px 0;
     border-radius: 5px;
 }
-
-/* .button:hover {
-    color: var(--base-color);
-    background: var(--secondary-text);
-} */
-
-/* .button:active {
-    box-shadow: none;
-    transform: translateY(4px);
-    transition: box-shadow 0.10s ease, transform 0.10s ease;
-}
-
-.button:hover {
-    color: var(--base-color);
-    background: var(--secondary-text);
-}
-
-.button-unactive {
-    box-shadow: none;
-}
-
-.navlink-config {
-    text-decoration: none;
-    color: var(--accent-color);
-}
-
-.navlink-config:hover {
-    color: var(--accent-color);
-}
-
-.navlink-config:visited {
-    color: var(--secondary-text);
-} */
 
 /* @media (min-width: 1024px) {
     .button-container {
