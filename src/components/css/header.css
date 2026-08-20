@@ -43,8 +43,6 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    left: 0;
-    right: 0;
     gap: 12px;
     padding: 20px 0;
     overflow-y: auto;
