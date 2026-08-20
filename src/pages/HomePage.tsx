@@ -112,12 +112,11 @@ export const HomePage = () => {
 
                     <div className='button-email-container'>
                         <div className='data-contact-container' onClick={handleCopy}>
-                            <div>
-                                {email}
-                            </div>
-
                             <div className='icon-clipboard'>
                                 {copied ? <CheckIcon className='icon-pop' /> : <CopyClipboardIcon className='icon-pop' />}
+                            </div>
+                            <div>
+                                {email}
                             </div>
                         </div>
                     </div>
