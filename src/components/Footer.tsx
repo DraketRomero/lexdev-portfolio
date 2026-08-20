@@ -1,68 +1,87 @@
 import { NavLink } from 'react-router';
+import './css/footer.css';
+import { DogIcon } from '../assets/icons';
 
 
 export const Footer = () => {
     return (
-        <div style={{ borderTop: "1px solid var(--text-color)", margin: "20px 0 0 0", backgroundColor: "var(--text-color)", color: "var(--primary-color)" }}>
-            <div style={{ margin: "50px 30px 0 30px" }}>
-                <div style={{ textAlign: "left" }}>
-                    <span style={{ fontSize: "19px", fontFamily: "'Fraunces'", fontWeight: "bold", fontStyle: "italic" }}>Diego Romero - DraketDev</span>
+        <footer>
+            <div className='main-footer-container'>
+                <div className='message-main-container'>
+                    <div className='title-container'>
+                        <span className='title-name'>Diego Romero - DraketDev</span>
+                    </div>
+                    <div className='message-container'>
+                        <p className='message-paragraph'>
+                            El presente portal es un proyecto que refleja y complementa mi formacion y experiencia. Fue diseñado con mucho amor y entusiasmo con el objetivo de mostrar al mundo lo que soy capaz de hacer como un ser humano lleno de imaginacion.
+                        </p>
+                        <p className='message-paragraph'>
+                            Te invito a visitar mi <a href='https://github.com/DraketRomero/lexdev-portfolio' rel="noopener noreferrer" target="_blank" className='paragraph'>repo en Github</a> para que conozcas mas sobre mi camino como desarrollador. Asi mismo, te invito a <a href='https://github.com/DraketRomero/lexdev-portfolio' className='paragraph' rel="noopener noreferrer" target="_blank" >conectar en LinkedIn</a> o a <a href='https://github.com/DraketRomero/lexdev-portfolio' className='paragraph' rel="noopener noreferrer" target="_blank">dejar una huellita </a> para saber que estuviste aqui.
+                        </p>
+                    </div>
                 </div>
-                <div style={{ padding: "30px 0", fontSize: "13px" }}>
-                    <p style={{ textAlign: "left" }}>
-                        El presente portal es un proyecto que refleja y complementa mi formacion y experiencia. Fue diseñado con mucho amor y entusiasmo con el objetivo de mostrar al mundo lo que soy capaz de hacer como un ser humano lleno de imaginacion.
-                    </p>
-                    <p style={{ padding: "30px 0 0 0", fontSize: "13px" }}>
-                        Te invito a visitar mi <a style={{ fontFamily: "'Fraunces'", fontWeight: "bold", fontStyle: "italic",  color: "var(--bg-icons)" }}>repo en Github</a> para que conozcas mas sobre mi camino como desarrollador. Asi mismo, te invito a <a style={{ fontFamily: "'Fraunces'", fontWeight: "bold", fontStyle: "italic",  color: "var(--bg-icons)" }}>conectar en LinkedIn</a> o a <a style={{ fontFamily: "'Fraunces'", fontWeight: "bold", fontStyle: "italic",  color: "var(--bg-icons)" }}>dejar una huellita </a> para saber que estuviste aqui.
-                    </p>
+                <div className='links-main-container'>
+                    <div className='title-container second-title-container'>
+                        <p className='title-footer'>Recorrer el sitio</p>
+                    </div>
+                    <div className='links-container'>
+                        <ul className='list-items'>
+                            <li className='list-footer-item'>
+                                <NavLink to='/huellitas' viewTransition className='routes'>
+                                    <div className='icons-footer'>
+                                        <DogIcon />
+                                        Huellitas
+                                    </div>
+                                </NavLink>
+                            </li>
+                            <li className='list-footer-item'>
+                                <NavLink to='/projects' viewTransition className='routes'>
+                                    <div className="icons-footer">
+                                        <DogIcon />
+                                        Proyectos
+                                    </div>
+                                </NavLink>
+                            </li>
+                            <li className='list-footer-item especial'>
+                                <NavLink to='/experience' viewTransition className='routes'>
+                                    <div className="icons-footer">
+                                        <DogIcon />
+                                        Experiencia
+                                    </div>
+                                </NavLink>
+                            </li>
+                            <li className='list-footer-item'>
+                                <NavLink to='/about-me' viewTransition className='routes'>
+                                    <div className="icons-footer">
+                                        <DogIcon />
+                                        Sobre mi
+                                    </div>
+                                </NavLink>
+                            </li>
+                            <li className='list-footer-item'>
+                                <NavLink to='/contact' viewTransition className='routes'>
+                                    <div className="icons-footer">
+                                        <DogIcon />
+                                        Contacto
+                                    </div>
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className='contact-main-container'>
+                    <div className='contact-container'>
+                        <ul className='list-items'>
+                            <li className='title-footer'>Contacto</li>
+                            <li className='list-contact-item'><a href="mailto:draketromero@gmail.com" className='routes'>draketromero@gmail.com</a></li>
+                            <li className='list-contact-item'><a href="tel:+522226134531" className='routes'>+52 22 26 13 45 31</a></li>
+                        </ul>
+                    </div>
+                    <div className='copyright-container'>
+                        <span className='copyright-text '>© 2026 Diego Romero · Puebla, MX  hecho con ❤️</span>
+                    </div>
                 </div>
             </div>
-            <div style={{ margin: "0 20px 0 30px", borderTop: "1px solid var(--base-color)" }}>
-                <div style={{ margin: "40px 0 10px 0" }}>
-                    <p style={{ fontSize: "16px", fontFamily: "'Fraunces'", fontWeight: "bold", fontStyle: "italic" }}>Recorrer el sitio</p>
-                </div>
-                <div style={{ padding: "0 0 20px 0"  }}>
-                    <ul style={{ listStyle: "none" }}>
-                        <li style={{ padding: "5px 0" }}>
-                            <NavLink to='/huellitas' viewTransition style={{ fontSize: "14px" }}>
-                                Huellitas
-                            </NavLink>
-                        </li>
-                        <li style={{ padding: "5px 0" }}>
-                            <NavLink to='/projects' viewTransition style={{ fontSize: "14px" }}>
-                                Proyectos
-                            </NavLink>
-                        </li>
-                        <li style={{ padding: "5px 0" }}>
-                            <NavLink to='/experience' viewTransition style={{ fontSize: "14px",  borderStyle: "none" }}>
-                                Experiencia
-                            </NavLink>
-                        </li>
-                        <li style={{ padding: "5px 0" }}>
-                            <NavLink to='/about-me' viewTransition style={{ fontSize: "14px" }}>
-                                Sobre mi
-                            </NavLink>
-                        </li>
-                        <li style={{ padding: "5px 0" }}>
-                            <NavLink to='/contact' viewTransition style={{ fontSize: "14px" }}>
-                                Contacto
-                            </NavLink>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div style={{ margin: "20px 30px 0 30px", borderTop: "1px solid var(--base-color)" }}>
-                <div style={{ margin: "40px 0 0 0" }}>
-                    <ul  style={{ listStyle: "none" }}>
-                        <li style={{ fontSize: "16px", fontFamily: "'Fraunces'", fontWeight: "bold", fontStyle: "italic" }}>Contacto</li>
-                        <li style={{ fontSize: "12px", padding: "10px 0" }}><a href="">draketromero@gmail.com</a></li>
-                        <li style={{ fontSize: "12px" }}><a href="">+52 22 26 13 45 31</a></li>
-                    </ul>
-                </div>
-                <div style={{ padding: "30px 0 30px 0" }}>
-                    <span  style={{ fontSize: "11px" }}>© 2026 Diego Romero · Puebla, MX  hecho con ❤️</span>
-                </div>
-            </div>
-        </div>
+        </footer>
     )
 }
