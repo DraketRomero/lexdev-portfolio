@@ -30,5 +30,30 @@
   "buttonText": {
     "cv": "Download CV",
     "contact": "Get in touch!"
+  },
+    "footer": {
+    "primaryText": "This website is a project that reflects and complements my education and experience. It was designed with a great deal of love and enthusiasm, with the goal of showing the world what I am capable of as a person full of imagination.",
+    "secondaryText": {
+      "0": "I invite you to visit my ",
+      "1": "repo on Github",
+      "2": "so you can learn more about my journey as a developer. I also invite you to",
+      "3": "connect on LinkedIn",
+      "4": "leave a little dog mark",
+      "5": " so I'll know you were here."
+    },
+    "navigation": {
+      "title": "Browse the site",
+      "options": {
+        "0": "Little Footprints",
+        "1": "Projects",
+        "2": "Experience",
+        "3": "About me",
+        "4": "Contact"
+      },
+      "contact": {
+        "title": "Contact"
+      },
+      "copyright": "made with"
+    }
   }
 }

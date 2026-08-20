@@ -30,5 +30,30 @@
   "buttonText": {
     "cv": "Descargar CV",
     "contact": "Contactemos!"
+  },
+  "footer": {
+    "primaryText": "El presente portal es un proyecto que refleja y complementa mi formacion y experiencia. Fue diseñado con mucho amor y entusiasmo con el objetivo de mostrar al mundo lo que soy capaz de hacer como un ser humano lleno de imaginacion.",
+    "secondaryText": {
+      "0": "Te invito a visitar mi ",
+      "1": "repo en Github",
+      "2": "para que conozcas mas sobre mi camino como desarrollador. Asi mismo, te invito a",
+      "3": "conectar en LinkedIn",
+      "4": "dejar una huellita",
+      "5": " para saber que estuviste aqui."
+    },
+    "navigation": {
+      "title": "Recorrer el sitio",
+      "options": {
+        "0": "Huellitas",
+        "1": "Proyectos",
+        "2": "Experiencia",
+        "3": "Sobre mi",
+        "4": "Contacto"
+      },
+      "contact": {
+        "title": "Contacto"
+      },
+      "copyright": "hecho con"
+    }
   }
 }
