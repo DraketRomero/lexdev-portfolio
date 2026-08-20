@@ -25,7 +25,7 @@ export const Header = () => {
     const handleShowMenuBurguerOptions = () => setIsOpen((prev) => !prev);
 
     return (
-        <header style={{ zIndex: "20" }}>
+        <header>
             <div className='container'>
                 <nav className='nav-container'>
                     <div className='img-container'>
