@@ -3,6 +3,7 @@ export { CheckIcon } from './CheckIcon';
 export { CloseIcon } from "./CloseIcon";
 export { ContactIcon } from './ContactIcon';
 export { CopyClipboardIcon } from './CopyClipboardIcon';
+export { DogIcon } from './DogIcon';
 export { DownloadDocumentIcon } from './DownloadDocumentIcon';
 export { GithubIcon } from './GithubIcon';
 export { LanguageIcon } from './LanguageIcon';
