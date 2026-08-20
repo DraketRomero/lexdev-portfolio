@@ -77,7 +77,7 @@ export const Header = () => {
                                 <Button
                                     className='menu-option button-header'
                                     // routeName={t('nav.projects')}
-                                    routeName={'huellitas'}
+                                    routeName={'Huellitas'}
                                     routeDestination='/projects'
                                     active={pathname == '/projects'}
                                 />
