@@ -76,6 +76,16 @@ export const Header = () => {
                             <li className='list-item'>
                                 <Button
                                     className='menu-option button-header'
+                                    // routeName={t('nav.projects')}
+                                    routeName={'huellitas'}
+                                    routeDestination='/projects'
+                                    active={pathname == '/projects'}
+                                />
+                            </li>
+                            
+                            <li className='list-item'>
+                                <Button
+                                    className='menu-option button-header'
                                     routeName={t('nav.contact')}
                                     routeDestination='/contact'
                                     active={pathname == '/contact'}
