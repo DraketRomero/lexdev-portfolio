@@ -1,6 +1,7 @@
 import type { RouteObject } from 'react-router';
 import { HomePage } from '../pages/HomePage';
 import { LayoutPage } from '../pages/LayoutPage';
+import { ContactPage } from '../pages/ContactPage';
 
 export const routes: RouteObject[] = [
     {
@@ -25,7 +26,7 @@ export const routes: RouteObject[] = [
             },
             {
                 path: 'contact',
-                element: <>Contac</>
+                element: <ContactPage />
             },
         ]
     }
