@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BurgerIcon, CloseIcon, MoonIcon, SunIcon } from '../assets/icons';
+import { BurgerIcon, CloseIcon, DogIcon, MoonIcon, SunIcon } from '../assets/icons';
 import './css/header.css';
 import { Link, useLocation } from 'react-router';
 import { Button } from './Button';
@@ -30,7 +30,7 @@ export const Header = () => {
                 <nav className='nav-container'>
                     <div className='img-container'>
                         <Link to='/' className='name' viewTransition>
-                            <span className='role word name'>DraketDev</span>
+                            <span className='role word name'><DogIcon height={20} width={30}/> DraketDev</span>
                         </Link>
                     </div>
 
