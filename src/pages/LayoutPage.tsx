@@ -13,9 +13,7 @@ export const LayoutPage = () => {
                 </section>
             </main>
 
-            <footer>
-                <Footer />
-            </footer>
+            <Footer />
         </>
     );
 }
