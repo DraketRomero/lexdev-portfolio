@@ -38,13 +38,14 @@
       "1": "repo on Github",
       "2": "so you can learn more about my journey as a developer. I also invite you to",
       "3": "connect on LinkedIn",
-      "4": "leave a little dog mark",
-      "5": " so I'll know you were here."
+      "4": " or to ",
+      "5": "leave a dog paw",
+      "6": " so I'll know you were here."
     },
     "navigation": {
       "title": "Browse the site",
       "options": {
-        "0": "Little Footprints",
+        "0": "Footprints",
         "1": "Projects",
         "2": "Experience",
         "3": "About me",

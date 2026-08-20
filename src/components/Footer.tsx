@@ -18,7 +18,7 @@ export const Footer = () => {
                         <p className='message-paragraph'>{t('footer.primaryText')}</p>
                         <p className='message-paragraph'>
                             {t('footer.secondaryText.0')}
-                            <a href='https://github.com/DraketRomero/lexdev-portfolio' rel="noopener noreferrer" target="_blank" className='paragraph'>{t('footer.secondaryText.1')}</a> {t('footer.secondaryText.2')} <a href='https://github.com/DraketRomero/lexdev-portfolio' className='paragraph' rel="noopener noreferrer" target="_blank" >{t('footer.secondaryText.3')}</a> o a <a href='https://github.com/DraketRomero/lexdev-portfolio' className='paragraph' rel="noopener noreferrer" target="_blank">{t('footer.secondaryText.4')}</a>{t('footer.secondaryText.5')}
+                            <a href='https://github.com/DraketRomero/lexdev-portfolio' rel="noopener noreferrer" target="_blank" className='paragraph'>{t('footer.secondaryText.1')}</a> {t('footer.secondaryText.2')} <a href='https://github.com/DraketRomero/lexdev-portfolio' className='paragraph' rel="noopener noreferrer" target="_blank" >{t('footer.secondaryText.3')}</a>{t('footer.secondaryText.4')}<a href='https://github.com/DraketRomero/lexdev-portfolio' className='paragraph' rel="noopener noreferrer" target="_blank">{t('footer.secondaryText.5')}</a>{t('footer.secondaryText.6')}
                         </p>
                     </div>
                 </div>
