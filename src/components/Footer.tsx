@@ -12,7 +12,7 @@ export const Footer = () => {
             <div className='main-footer-container'>
                 <div className='message-main-container'>
                     <div className='title-container'>
-                        <span className='title-name'>Diego Romero - DraketDev</span>
+                        <span className='title-name'>{"</>"} Diego Romero - DraketDev</span>
                     </div>
                     <div className='message-container'>
                         <p className='message-paragraph'>{t('footer.primaryText')}</p>
