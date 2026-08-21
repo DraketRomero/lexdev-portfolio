@@ -44,7 +44,7 @@ export const Footer = () => {
                                     </div>
                                 </NavLink>
                             </li>
-                            <li className='list-footer-item especial'>
+                            <li className='list-footer-item'>
                                 <NavLink to='/experience' viewTransition className='routes'>
                                     <div className="icons-footer">
                                         <DogIcon />
