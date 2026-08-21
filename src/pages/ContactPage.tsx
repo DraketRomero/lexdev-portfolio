@@ -2,7 +2,7 @@ import './css/contactPage.css';
 
 export const ContactPage = () => {
     return (
-        <div className='contact-main-container'>
+        <div className='contact-contact-container'>
             <div className='titles-container'>
                 <h1 className='title'>¡Contáctame!</h1>
                 <br />
