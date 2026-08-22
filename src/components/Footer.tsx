@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router';
 import './css/footer.css';
-import { DogIcon } from '../assets/icons';
+import { AboutMeIcon, ContactIcon, DogIcon, ExperienceIcon, ProjectIcon } from '../assets/icons';
 import { useTranslation } from 'react-i18next';
 
 
@@ -39,7 +39,7 @@ export const Footer = () => {
                             <li className='list-footer-item'>
                                 <NavLink to='/projects' viewTransition className='routes'>
                                     <div className="icons-footer">
-                                        <DogIcon />
+                                        <ProjectIcon />
                                          {t('footer.navigation.options.1')}
                                     </div>
                                 </NavLink>
@@ -47,7 +47,7 @@ export const Footer = () => {
                             <li className='list-footer-item'>
                                 <NavLink to='/experience' viewTransition className='routes'>
                                     <div className="icons-footer">
-                                        <DogIcon />
+                                        <ExperienceIcon />
                                          {t('footer.navigation.options.2')}
                                     </div>
                                 </NavLink>
@@ -55,7 +55,7 @@ export const Footer = () => {
                             <li className='list-footer-item'>
                                 <NavLink to='/about-me' viewTransition className='routes'>
                                     <div className="icons-footer">
-                                        <DogIcon />
+                                        <AboutMeIcon />
                                          {t('footer.navigation.options.3')}
                                     </div>
                                 </NavLink>
@@ -63,7 +63,7 @@ export const Footer = () => {
                             <li className='list-footer-item'>
                                 <NavLink to='/contact' viewTransition className='routes'>
                                     <div className="icons-footer">
-                                        <DogIcon />
+                                        <ContactIcon width={24} height={15} />
                                          {t('footer.navigation.options.4')}
                                     </div>
                                 </NavLink>

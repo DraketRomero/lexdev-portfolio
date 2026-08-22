@@ -1,3 +1,4 @@
+export { AboutMeIcon } from "./AboutMeIcon";
 export { BurgerIcon } from './BurgerIcon';
 export { CheckIcon } from './CheckIcon';
 export { CloseIcon } from "./CloseIcon";
@@ -5,9 +6,11 @@ export { ContactIcon } from './ContactIcon';
 export { CopyClipboardIcon } from './CopyClipboardIcon';
 export { DogIcon } from './DogIcon';
 export { DownloadDocumentIcon } from './DownloadDocumentIcon';
+export { ExperienceIcon } from "./ExperienceIcon";
 export { GithubIcon } from './GithubIcon';
 export { LanguageIcon } from './LanguageIcon';
 export { LinkedInIcon } from "./LinkedInIcon";
 export { MoonIcon } from "./MoonIcon";
+export { ProjectIcon } from "./ProjectIcon";
 export { StarIcon } from './StarIcon';
 export { SunIcon } from "./SunIcon";
