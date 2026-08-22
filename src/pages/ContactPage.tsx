@@ -1,6 +1,34 @@
 import './css/contactPage.css';
+import { useState } from 'react';
+
+interface ContactData {
+    name: string;
+    email: string;
+    messsage: string;
+}
+
 
 export const ContactPage = () => {
+    const [contactData, setContactData] = useState<ContactData>({ name: "", email: "", messsage: "" });
+
+    const handleContactData = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, inputType: string) => {
+        const { value } = e.target;
+
+        switch (inputType) {
+            case "name": setContactData({ ...contactData, name: value })
+                break;
+            case "email": setContactData({ ...contactData, email: value })
+                break;
+            case "message": setContactData({ ...contactData, messsage: value })
+                break;
+        }
+    }
+
+    // TODO: Agregar funcionalidad de API para envio de correo.
+    const handleSendContactInfo = (e: React.SubmitEvent<HTMLFormElement>) => {
+        e.preventDefault();
+    }
+
     return (
         <div className='contact-contact-container'>
             <div className='titles-container'>
@@ -27,34 +55,34 @@ export const ContactPage = () => {
                 </div>
             </div>
             <div className='form-main-container'>
-                <form action="">
+                <form onSubmit={handleSendContactInfo} autoComplete='off' method='POST' id='contact-form'>
                     <div className='form-field-container'>
-                        <label htmlFor="name">
+                        <label htmlFor="name" className='input-label'>
                             <span className='form-label'>Nombre</span>
-                            <input type="text" id="name" placeholder='John Doe' className='input-text' />
+                            <input type="text" id="name" placeholder='John Doe' className='input-text' value={contactData.name} onChange={(e) => handleContactData(e, "name")} autoComplete='off' />
                         </label>
                     </div>
                     <div className='form-field-container'>
-                        <label htmlFor="email">
+                        <label htmlFor="email" className='input-label'>
                             <span className='form-label'>Correo</span>
-                            <input type="email" id="email" placeholder='jhondoe@mail.com' className='input-text' />
+                            <input type="email" id="email" placeholder='jhondoe@mail.com' className='input-text' value={contactData.email} onChange={(e) => handleContactData(e, "email")} autoComplete='off' />
                         </label>
 
                     </div>
                     <div className='form-field-container'>
-                        <label htmlFor="message">
+                        <label htmlFor="message" className='input-label'>
                             <span className='form-label'>Mensaje</span>
-                            <textarea id="message" placeholder="Tu mensaje :)" className='text-area' />
+                            <textarea id="message" placeholder="Tu mensaje :)" className='text-area' value={contactData.messsage} onChange={(e) => handleContactData(e, "message")} />
                         </label>
+                    </div>
+                    <div className='message-button-container'>
+                        <p className='message'>Me pondre en contacto contigo lo mas pronto posible.</p>
+
+                        <div className='button-contact-contaner'>
+                            <button type='submit' className='button-form'>Enviar</button>
+                        </div>
                     </div>
                 </form>
-                <div className='message-button-container'>
-                    <p className='message'>Me pondre en contacto contigo lo mas pronto posible.</p>
-
-                    <div className='button-contact-contaner'>
-                        <button className='button-form'>Enviar</button>
-                    </div>
-                </div>
             </div>
         </div>
     )
