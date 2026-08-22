@@ -34,7 +34,7 @@ export const ContactPage = () => {
             <div className='titles-container'>
                 <h1 className='title'>¡Contáctame!</h1>
                 <br />
-                <em style={{ fontSize: "25px"}}>¡Me encantará platicar contigo! :)</em>
+                <em className='second-title'>¡Me encantará platicar contigo! :)</em>
             </div>
             <div className='info-main-container'>
                 <div className='info-container'>
