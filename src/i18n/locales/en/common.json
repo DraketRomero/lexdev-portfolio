@@ -31,7 +31,37 @@
     "cv": "Download CV",
     "contact": "Get in touch!"
   },
-    "footer": {
+  "contact": {
+    "titles": {
+      "0": "¡Contact Me!",
+      "1": "I'd love to chat with you! :)"
+    },
+    "contactInfo": {
+      "mail": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "availability": "Availability",
+      "availabilityMessage": "With ample availability for both hybrid and remote opportunities."
+    },
+    "contactForm": {
+      "name": {
+        "label": "Name",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "jhondoe@mail.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message :)"
+      },
+      "textBottom": "I'll get in touch with you as soon as possible.",
+      "textButtonBottom": "Send",
+      "textButtonPromiseBottiom": "Sending..."
+    }
+  },
+  "footer": {
     "primaryText": "This website is a project that reflects and complements my education and experience. It was designed with a great deal of love and enthusiasm, with the goal of showing the world what I am capable of as a person full of imagination.",
     "secondaryText": {
       "0": "I invite you to visit my ",

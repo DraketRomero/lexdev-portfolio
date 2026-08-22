@@ -31,6 +31,36 @@
     "cv": "Descargar CV",
     "contact": "Contactemos!"
   },
+  "contact": {
+    "titles": {
+      "0": "¡Contáctame!",
+      "1": "¡Me encantará platicar contigo! :)"
+    },
+    "contactInfo": {
+      "mail": "Correo",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "availability": "Disponibilidad",
+      "availabilityMessage": "Con amplia disponibilidad para oportunidades tanto híbiridas como remotas."
+    },
+    "contactForm": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Cosme Fulanito"
+      },
+      "email": {
+        "label": "Correo",
+        "placeholder": "cosmefulanito@mail.com"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Tu mensaje :)"
+      },
+      "textBottom": "Me pondré en contacto contigo lo más pronto posible.",
+      "textButtonBottom": "Enviar",
+      "textButtonPromiseBottiom": "Enviando..."
+    }
+  },
   "footer": {
     "primaryText": "El presente portal es un proyecto que refleja y complementa mi formacion y experiencia. Fue diseñado con mucho amor y entusiasmo con el objetivo de mostrar al mundo lo que soy capaz de hacer como un ser humano lleno de imaginacion.",
     "secondaryText": {
