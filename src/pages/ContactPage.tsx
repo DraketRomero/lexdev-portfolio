@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import './css/contactPage.css';
 import { useState } from 'react';
+import { useEmployContext } from '../context/context';
 
 interface ContactData {
     name: string;
@@ -12,6 +13,7 @@ interface ContactData {
 export const ContactPage = () => {
     const { t } = useTranslation();
     const [contactData, setContactData] = useState<ContactData>({ name: "", email: "", messsage: "" });
+    const { email, phone, location } = useEmployContext();
 
     const handleContactData = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, inputType: string) => {
         const { value } = e.target;
@@ -41,15 +43,15 @@ export const ContactPage = () => {
             <div className='info-main-container'>
                 <div className='info-container'>
                     <p className='info-title'>{t('contact.contactInfo.mail')}</p>
-                    <a href="" className='link-contact'>draketromero@gmail.com</a>
+                    <a href="" className='link-contact'>{email}</a>
                 </div>
                 <div className='info-container'>
                     <p className='info-title'>{t('contact.contactInfo.phone')}</p>
-                    <a href="" className='link-contact'>+52 22 226 13 45 31</a>
+                    <a href="" className='link-contact'>{phone}</a>
                 </div>
                 <div className='info-container'>
                     <p className='info-title'>{t('contact.contactInfo.location')}</p>
-                    <span className='work-place'>Puebla, Mx</span>
+                    <span className='work-place link-contact'>{location}</span>
                 </div>
                 <div className='info-container last'>
                     <p className='info-title'>{t('contact.contactInfo.availability')}</p>
