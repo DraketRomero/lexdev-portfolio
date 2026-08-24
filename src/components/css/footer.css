@@ -119,6 +119,18 @@
     height: 1px;
 }
 
+.icons-filled {
+    display: none;
+}
+
+.routes:hover .icons-outlined {
+    display: none;
+}
+
+.routes:hover .icons-filled {
+    display: flex;
+}
+
 .contact-main-container {
     margin: 10px 30px 0 30px;
     border-top: 1px solid var(--base-color);
