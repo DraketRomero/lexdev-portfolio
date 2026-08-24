@@ -119,7 +119,7 @@ export const HomePage = () => {
                             <div className='icon-clipboard'>
                                 {copied ? <CheckIcon className='icon-pop' /> : <CopyClipboardIcon className='icon-pop' />}
                             </div>
-                            <div>
+                            <div className='email-text'>
                                 {email}
                             </div>
                         </div>
