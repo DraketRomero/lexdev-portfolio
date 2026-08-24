@@ -1,7 +1,18 @@
 import { NavLink } from 'react-router';
 import './css/footer.css';
-import { AboutMeIcon, ContactIcon, DogIcon, ExperienceIcon, ProjectIcon } from '../assets/icons';
 import { useTranslation } from 'react-i18next';
+import {
+    AboutMeFilledIcon,
+    AboutMeOutlinedIcon,
+    ContactFilledIcon,
+    ContactOutlinedIcon,
+    DogFilledIcon,
+    DogOutlinedIcon, 
+    ExperienceFilledIcon, 
+    ExperienceOutlinedIcon, 
+    ProjectFilledIcon, 
+    ProjectOutilinedIcon
+} from '../assets/icons';
 
 
 export const Footer = () => {
@@ -30,8 +41,9 @@ export const Footer = () => {
                         <ul className='list-items'>
                             <li className='list-footer-item'>
                                 <NavLink to='/huellitas' viewTransition className='routes'>
-                                    <div className='icons-footer'>
-                                        <DogIcon />
+                                    <div className="icons-footer">
+                                        <DogFilledIcon className='icons-filled' />
+                                        <DogOutlinedIcon className='icons-outlined' />
                                         {t('footer.navigation.options.0')}
                                     </div>
                                 </NavLink>
@@ -39,32 +51,36 @@ export const Footer = () => {
                             <li className='list-footer-item'>
                                 <NavLink to='/projects' viewTransition className='routes'>
                                     <div className="icons-footer">
-                                        <ProjectIcon />
-                                         {t('footer.navigation.options.1')}
+                                        <ProjectOutilinedIcon className='icons-outlined' />
+                                        <ProjectFilledIcon className='icons-filled' />
+                                        {t('footer.navigation.options.1')}
                                     </div>
                                 </NavLink>
                             </li>
                             <li className='list-footer-item'>
                                 <NavLink to='/experience' viewTransition className='routes'>
                                     <div className="icons-footer">
-                                        <ExperienceIcon />
-                                         {t('footer.navigation.options.2')}
+                                        <ExperienceOutlinedIcon className='icons-outlined' />
+                                        <ExperienceFilledIcon className='icons-filled' />
+                                        {t('footer.navigation.options.2')}
                                     </div>
                                 </NavLink>
                             </li>
                             <li className='list-footer-item'>
                                 <NavLink to='/about-me' viewTransition className='routes'>
                                     <div className="icons-footer">
-                                        <AboutMeIcon />
-                                         {t('footer.navigation.options.3')}
+                                        <AboutMeFilledIcon className='icons-filled' />
+                                        <AboutMeOutlinedIcon className='icons-outlined' />
+                                        {t('footer.navigation.options.3')}
                                     </div>
                                 </NavLink>
                             </li>
                             <li className='list-footer-item'>
                                 <NavLink to='/contact' viewTransition className='routes'>
                                     <div className="icons-footer">
-                                        <ContactIcon width={24} height={15} />
-                                         {t('footer.navigation.options.4')}
+                                        <ContactFilledIcon width={24} height={15} className='icons-filled' />
+                                        <ContactOutlinedIcon width={24} height={15} className='icons-outlined' />
+                                        {t('footer.navigation.options.4')}
                                     </div>
                                 </NavLink>
                             </li>

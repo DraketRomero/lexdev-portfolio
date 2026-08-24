@@ -1,14 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 import bunnie from './../assets/img/bunnie2.webp';
 import './css/homePage.css'
-import { DownloadDocumentIcon, GithubIcon, LinkedInIcon } from '../assets/icons';
-import { CopyClipboardIcon } from '../assets/icons/CopyClipboardIcon';
-import { CheckIcon } from '../assets/icons/CheckIcon';
-import { ButtonIcon } from '../components/ButtonIcon';
-import { ContactIcon } from '../assets/icons/ContactIcon';
-import { Link } from 'react-router';
+import { 
+    CheckIcon, 
+    ContactFilledIcon, 
+    CopyClipboardIcon, 
+    DownloadDocumentIcon, 
+    GithubIcon, 
+    LinkedInIcon, 
+    StarIcon 
+} from '../assets/icons';
 import { useTranslation } from 'react-i18next';
-import { StarIcon } from '../assets/icons/StarIcon';
+import { Link } from 'react-router';
+import { ButtonIcon } from '../components/ButtonIcon';
 
 export const HomePage = () => {
     const { t } = useTranslation();
@@ -101,7 +105,7 @@ export const HomePage = () => {
                     <div className='document-button-container'>
                         <Link to='/contact' className="document-link" viewTransition>
                             <div className='document-icon'>
-                                <ContactIcon />
+                                <ContactFilledIcon />
                             </div>
 
                             <span className='document-text document-text-span'>
