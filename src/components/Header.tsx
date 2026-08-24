@@ -6,12 +6,15 @@ import { Button } from './Button';
 import { LanguageSelector } from './LanguageSelector';
 import { useTranslation } from 'react-i18next';
 import { LanguageSelectorSwitch } from './LanguageSelectorSwitch';
+import { useEmployContext } from '../context/context';
 
 export const Header = () => {
     const [isDarkTheme, setIsDarkTheme] = useState<boolean>(() => localStorage.getItem('darkmode') === 'active');
     const [isOpen, setIsOpen] = useState<boolean>(true);
     const { pathname } = useLocation();
     const { t } = useTranslation();
+
+    const { alias } = useEmployContext();
 
     useEffect(() => {
         document.body.classList.toggle('darkmode', isDarkTheme)
@@ -30,7 +33,7 @@ export const Header = () => {
                 <nav className='nav-container'>
                     <div className='img-container'>
                         <Link to='/' className='name' viewTransition>
-                            <span className='role word name'>{"</>"} DraketDev</span>
+                            <span className='role word name'>{"</>"} {alias}</span>
                         </Link>
                     </div>
 
@@ -82,7 +85,7 @@ export const Header = () => {
                                     active={pathname == '/projects'}
                                 />
                             </li>
-                            
+
                             <li className='list-item'>
                                 <Button
                                     className='menu-option button-header'

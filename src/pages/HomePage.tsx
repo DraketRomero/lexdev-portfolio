@@ -1,18 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
 import bunnie from './../assets/img/bunnie2.webp';
 import './css/homePage.css'
-import { 
-    CheckIcon, 
-    ContactFilledIcon, 
-    CopyClipboardIcon, 
-    DownloadDocumentIcon, 
-    GithubIcon, 
-    LinkedInIcon, 
-    StarIcon 
+import {
+    CheckIcon,
+    ContactFilledIcon,
+    CopyClipboardIcon,
+    DownloadDocumentIcon,
+    GithubIcon,
+    LinkedInIcon,
+    StarIcon
 } from '../assets/icons';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 import { ButtonIcon } from '../components/ButtonIcon';
+import { useEmployContext } from '../context/context';
 
 export const HomePage = () => {
     const { t } = useTranslation();
@@ -20,7 +21,8 @@ export const HomePage = () => {
     const [index, setIndex] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
 
-    const [email] = useState<string>('draketromero@gmail.com');
+    const { email, name, social_media } = useEmployContext();
+
     const [copied, setCopied] = useState<boolean>(false);
     const timeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
@@ -55,7 +57,7 @@ export const HomePage = () => {
                 </div>
 
                 <div className='dev-info'>
-                    <p className='gretting'>{t('hero.greeting')} <span className='wave-icon'>👋</span>{t('hero.pronoun')}<span className='word'>{t('hero.name')}</span></p>
+                    <p className='gretting'>{t('hero.greeting')} <span className='wave-icon'>👋</span>{t('hero.pronoun')}<span className='word'>{name}</span></p>
                     <p className='role'>
                         Senior
                         <span
@@ -99,8 +101,8 @@ export const HomePage = () => {
             <div className='icons-container'>
                 <div className='icons'>
                     <ButtonIcon href='/cv-diegoromero.pdf' text={t('buttonText.cv')} icon={<DownloadDocumentIcon />} />
-                    <ButtonIcon href='https://www.linkedin.com/in/rdiego-romero/' text='LinkedIn' icon={<LinkedInIcon />} />
-                    <ButtonIcon href='https://github.com/DraketRomero' text='Github' icon={<GithubIcon />} />
+                    <ButtonIcon href={social_media[0].url} text={social_media[0].name} icon={<GithubIcon />} />
+                    <ButtonIcon href={social_media[1].url} text={social_media[1].name} icon={<LinkedInIcon />} />
 
                     <div className='document-button-container'>
                         <Link to='/contact' className="document-link" viewTransition>

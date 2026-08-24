@@ -7,29 +7,31 @@ import {
     ContactFilledIcon,
     ContactOutlinedIcon,
     DogFilledIcon,
-    DogOutlinedIcon, 
-    ExperienceFilledIcon, 
-    ExperienceOutlinedIcon, 
-    ProjectFilledIcon, 
+    DogOutlinedIcon,
+    ExperienceFilledIcon,
+    ExperienceOutlinedIcon,
+    ProjectFilledIcon,
     ProjectOutilinedIcon
 } from '../assets/icons';
+import { useEmployContext } from '../context/context';
 
 
 export const Footer = () => {
     const { t } = useTranslation();
+    const { alias, email, name, phone, location, social_media } = useEmployContext();
 
     return (
         <footer>
             <div className='main-footer-container'>
                 <div className='message-main-container'>
                     <div className='title-container'>
-                        <span className='title-name'>{"</>"} Diego Romero - DraketDev</span>
+                        <span className='title-name'>{"</>"} {name} - {alias}</span>
                     </div>
                     <div className='message-container'>
                         <p className='message-paragraph'>{t('footer.primaryText')}</p>
                         <p className='message-paragraph'>
                             {t('footer.secondaryText.0')}
-                            <a href='https://github.com/DraketRomero/lexdev-portfolio' rel="noopener noreferrer" target="_blank" className='paragraph'>{t('footer.secondaryText.1')}</a> {t('footer.secondaryText.2')} <a href='https://github.com/DraketRomero/lexdev-portfolio' className='paragraph' rel="noopener noreferrer" target="_blank" >{t('footer.secondaryText.3')}</a>{t('footer.secondaryText.4')}<a href='https://github.com/DraketRomero/lexdev-portfolio' className='paragraph' rel="noopener noreferrer" target="_blank">{t('footer.secondaryText.5')}</a>{t('footer.secondaryText.6')}
+                            <a href={`${social_media[0].url}/lexdev-portfolio`} rel="noopener noreferrer" target="_blank" className='paragraph'>{t('footer.secondaryText.1')}</a> {t('footer.secondaryText.2')} <a href={`${social_media[1].url}`} className='paragraph' rel="noopener noreferrer" target="_blank" >{t('footer.secondaryText.3')}</a>{t('footer.secondaryText.4')}<a href='https://github.com/DraketRomero/lexdev-portfolio' className='paragraph' rel="noopener noreferrer" target="_blank">{t('footer.secondaryText.5')}</a>{t('footer.secondaryText.6')}
                         </p>
                     </div>
                 </div>
@@ -91,12 +93,12 @@ export const Footer = () => {
                     <div className='contact-container'>
                         <ul className='list-items'>
                             <li className='title-footer'>{t('footer.navigation.contact.title')}</li>
-                            <li className='list-contact-item'><a href="mailto:draketromero@gmail.com" className='routes'>draketromero@gmail.com</a></li>
-                            <li className='list-contact-item'><a href="tel:+522226134531" className='routes'>+52 22 26 13 45 31</a></li>
+                            <li className='list-contact-item'><a href={`mailto:${email}`} className='routes'>{email}</a></li>
+                            <li className='list-contact-item'><a href="tel:+522226134531" className='routes'>{phone}</a></li>
                         </ul>
                     </div>
                     <div className='copyright-container'>
-                        <span className='copyright-text '>© 2026 Diego Romero · Puebla, MX {t('footer.navigation.copyright')} ❤️</span>
+                        <span className='copyright-text '>© 2026 {name} · {location} {t('footer.navigation.copyright')} ❤️</span>
                     </div>
                 </div>
             </div>
