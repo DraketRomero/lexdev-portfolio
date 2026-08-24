@@ -8,7 +8,6 @@
   "hero": {
     "greeting": "Hola",
     "pronoun": "!, Soy ",
-    "name": "Diego Romero",
     "description": "Diseño y desarrollo software escalable, sistemas distribuidos y aplicaciones inteligentes, desde backends de alto rendimiento y plataformas web modernas hasta infraestructura en la nube y ",
     "ai": "soluciones basadas en IA.",
     "extra": "6+ años convirtiendo problemas de ingeniería complejos en sistemas listos para su implementación en producción.",
