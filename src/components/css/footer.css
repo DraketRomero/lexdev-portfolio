@@ -39,7 +39,7 @@
     font-family: 'Fraunces';
     font-weight: bold;
     font-style: italic;
-    color: var(--bg-icons);
+    color: var(--accent-color);
 }
 
 .paragraph::after {
