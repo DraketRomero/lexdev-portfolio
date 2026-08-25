@@ -13,6 +13,10 @@ export const routes: RouteObject[] = [
                 element: <HomePage />
             },
             {
+                path: 'resume',
+                element: <p style={{ color: "white" }}>Resume</p>
+            },
+            {
                 path: 'about-me',
                 element: <p style={{ color: "white" }}>Nnenuco</p>
             },
