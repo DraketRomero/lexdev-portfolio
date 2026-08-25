@@ -57,7 +57,7 @@ export const Footer = () => {
                                     <div className="icons-footer">
                                         <DogFilledIcon className='icons-filled' />
                                         <DogOutlinedIcon className='icons-outlined' />
-                                        {t('footer.navigation.options.0')}
+                                        {t('footer.navigation.options.1')}
                                     </div>
                                 </NavLink>
                             </li>
@@ -66,7 +66,7 @@ export const Footer = () => {
                                     <div className="icons-footer">
                                         <ProjectOutilinedIcon className='icons-outlined' />
                                         <ProjectFilledIcon className='icons-filled' />
-                                        {t('footer.navigation.options.1')}
+                                        {t('footer.navigation.options.2')}
                                     </div>
                                 </NavLink>
                             </li>
@@ -75,7 +75,7 @@ export const Footer = () => {
                                     <div className="icons-footer">
                                         <ExperienceOutlinedIcon className='icons-outlined' />
                                         <ExperienceFilledIcon className='icons-filled' />
-                                        {t('footer.navigation.options.2')}
+                                        {t('footer.navigation.options.3')}
                                     </div>
                                 </NavLink>
                             </li>
@@ -84,7 +84,7 @@ export const Footer = () => {
                                     <div className="icons-footer">
                                         <AboutMeFilledIcon className='icons-filled' />
                                         <AboutMeOutlinedIcon className='icons-outlined' />
-                                        {t('footer.navigation.options.3')}
+                                        {t('footer.navigation.options.4')}
                                     </div>
                                 </NavLink>
                             </li>
@@ -93,7 +93,7 @@ export const Footer = () => {
                                     <div className="icons-footer">
                                         <ContactFilledIcon width={24} height={15} className='icons-filled' />
                                         <ContactOutlinedIcon width={24} height={15} className='icons-outlined' />
-                                        {t('footer.navigation.options.4')}
+                                        {t('footer.navigation.options.5')}
                                     </div>
                                 </NavLink>
                             </li>
