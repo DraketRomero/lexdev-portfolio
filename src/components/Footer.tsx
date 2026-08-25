@@ -46,6 +46,15 @@ export const Footer = () => {
                             <li className='list-footer-item'>
                                 <NavLink to='/huellitas' viewTransition className='routes'>
                                     <div className="icons-footer">
+                                        <SkillsFilledIcon className='icons-filled' />
+                                        <SkillsOutlinedIcon className='icons-outlined' />
+                                        {t('footer.navigation.options.0')}
+                                    </div>
+                                </NavLink>
+                            </li>
+                            <li className='list-footer-item'>
+                                <NavLink to='/huellitas' viewTransition className='routes'>
+                                    <div className="icons-footer">
                                         <DogFilledIcon className='icons-filled' />
                                         <DogOutlinedIcon className='icons-outlined' />
                                         {t('footer.navigation.options.0')}
