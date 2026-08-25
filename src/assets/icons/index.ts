@@ -17,5 +17,7 @@ export { LinkedInIcon } from "./LinkedInIcon";
 export { MoonIcon } from "./MoonIcon";
 export { ProjectFilledIcon } from "./ProjectFilledIcon";
 export { ProjectOutilinedIcon } from "./ProjectOutilinedIcon";
+export { SkillsFilledIcon } from "./SkillsFilledIcon";
+export { SkillsOutlinedIcon } from "./SkillsOutlinedIcon";
 export { StarIcon } from './StarIcon';
 export { SunIcon } from "./SunIcon";
