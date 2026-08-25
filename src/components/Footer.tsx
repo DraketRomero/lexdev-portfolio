@@ -11,7 +11,9 @@ import {
     ExperienceFilledIcon,
     ExperienceOutlinedIcon,
     ProjectFilledIcon,
-    ProjectOutilinedIcon
+    ProjectOutilinedIcon,
+    SkillsFilledIcon,
+    SkillsOutlinedIcon
 } from '../assets/icons';
 import { useEmployContext } from '../context/context';
 
