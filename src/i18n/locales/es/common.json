@@ -1,5 +1,6 @@
 {
   "nav": {
+    "resume": "CV y Habilidades",
     "projects": "Proyectos",
     "experience": "Experiencia",
     "aboutMe": "Sobre mí",
@@ -74,11 +75,12 @@
     "navigation": {
       "title": "Recorrer el sitio",
       "options": {
-        "0": "Huellitas",
-        "1": "Proyectos",
-        "2": "Experiencia",
-        "3": "Sobre mi",
-        "4": "Contacto"
+        "0": "CV y habilidades",
+        "1": "Huellitas",
+        "2": "Proyectos",
+        "3": "Experiencia",
+        "4": "Sobre mi",
+        "5": "Contacto"
       },
       "contact": {
         "title": "Contacto"

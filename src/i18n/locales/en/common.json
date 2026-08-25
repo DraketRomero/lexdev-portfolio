@@ -1,5 +1,6 @@
 {
   "nav": {
+    "resume": "Resume and Skills",
     "projects": "Projects",
     "experience": "Experience",
     "aboutMe": "About me",
@@ -74,11 +75,12 @@
     "navigation": {
       "title": "Browse the site",
       "options": {
-        "0": "Footprints",
-        "1": "Projects",
-        "2": "Experience",
-        "3": "About me",
-        "4": "Contact"
+        "0": "Resume and Skills",
+        "1": "Footprints",
+        "2": "Projects",
+        "3": "Experience",
+        "4": "About me",
+        "5": "Contact"
       },
       "contact": {
         "title": "Contact"
