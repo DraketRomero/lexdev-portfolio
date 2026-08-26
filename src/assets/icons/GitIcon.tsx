@@ -1,4 +1,6 @@
-export const GitIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width={50} height={50} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-git">
+import type { IIconProps } from "./IIconProps";
+
+export const GitIcon = ({ width=24, height=24 }: IIconProps) => <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-git">
 	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 	<path d="M15 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
 	<path d="M11 8a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
