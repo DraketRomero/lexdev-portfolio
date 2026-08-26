@@ -5,48 +5,51 @@ import { frontendIcons } from "./FrontendTech"
 import { LearningIcons } from "./LearningTech"
 import { TestingIcons } from "./TestingTech"
 import { toolsIcons } from "./ToolsTech"
+import { useTranslation } from 'react-i18next';
 import './css/resumePage.css'
 
 export const ResumePage = () => {
+    const { t } = useTranslation();
+
     return (
         <div className='resume-main-container'>
             <div className='resume-title-container'>
-                <p className='resume-title'>Habilidades y Herramientes</p>
-                <p className='resume-description'>Frameworks y lenguajes con los que he podido desarrollar sistemas.</p>
+                <p className='resume-title'>{t('skills.title')}</p>
+                <p className='resume-description'>{t('skills.subtitle')}</p>
             </div>
 
-            <SkillGridIcons main_title="Frontend" description="Frameworks con los que desarrollo mis proyectos." technologies={frontendIcons} />
-            <SkillGridIcons main_title="Backend" description="Lenguajes y frameworks en los que implemento las reglas de negocio." technologies={backendIcons} />
-            <SkillGridIcons main_title="DevOps" description="Tecnologias que uso para el ciclo de CI/CD" technologies={DevOpsIcons} />
-            <SkillGridIcons main_title="Testing" description="Herramientas con las que pruebo la funcionalidad de mi codigo" technologies={TestingIcons} />
-            <SkillGridIcons main_title="Herramientas" description="Herramientas con las que trabajo en mi flujo de desarrollo." technologies={toolsIcons} />
-            <SkillGridIcons main_title="Aprendiendo actualmente" description="Tecnologias que me encuentro aprendiendo." technologies={LearningIcons} />
+            <SkillGridIcons main_title={`${t('skills.grid.0.name')}`} description={`${t('skills.grid.0.description')}`} technologies={frontendIcons} />
+            <SkillGridIcons main_title={`${t('skills.grid.1.name')}`} description={`${t('skills.grid.1.description')}`} technologies={backendIcons} />
+            <SkillGridIcons main_title={`${t('skills.grid.2.name')}`} description={`${t('skills.grid.2.description')}`} technologies={DevOpsIcons} />
+            <SkillGridIcons main_title={`${t('skills.grid.3.name')}`} description={`${t('skills.grid.3.description')}`} technologies={TestingIcons} />
+            <SkillGridIcons main_title={`${t('skills.grid.4.name')}`} description={`${t('skills.grid.4.description')}`} technologies={toolsIcons} />
+            <SkillGridIcons main_title={`${t('skills.grid.5.name')}`} description={`${t('skills.grid.5.description')}`} technologies={LearningIcons} />
 
 
             <div className='resume-idioms-container'>
                 <div>
-                    <p className='resume-title'>Idiomas</p>
-                    <p className='resume-description'>La manera en la que me comunico con la gente, expreso mis ideas, opiniones tecnicas y sociales.</p>
+                    <p className='resume-title'>{t('skills.lang.title')}</p>
+                    <p className='resume-description'>{t('skills.lang.description')}</p>
                 </div>
 
                 <div className='skill-grid-table'>
                     <div className="resume-idiom">
                         <div>
-                            <p>Español</p>
+                            <p>{t('skills.lang.languages.0.name')}</p>
                         </div>
 
                         <div>
-                            <p>Nativo</p>
+                            <p>{t('skills.lang.languages.0.level')}</p>
                         </div>
                     </div>
 
                     <div className="resume-idiom">
                         <div>
-                            <p>Inglés</p>
+                            <p>{t('skills.lang.languages.1.name')}</p>
                         </div>
 
                         <div>
-                            <p>C1  ·  Avanzado</p>
+                            <p>{t('skills.lang.languages.1.level')}</p>
                         </div>
                     </div>
                 </div>

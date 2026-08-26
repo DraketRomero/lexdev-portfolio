@@ -1,6 +1,6 @@
 {
   "nav": {
-    "resume": "CV y Habilidades",
+    "resume": "Habilidades, herramientas e idiomas.",
     "projects": "Proyectos",
     "experience": "Experiencia",
     "aboutMe": "Sobre mí",
@@ -61,6 +61,50 @@
       "textButtonPromiseBottiom": "Enviando..."
     }
   },
+  "skills": {
+    "title": "Habilidades y Herramientes",
+    "subtitle": "Frameworks y lenguajes trabajados en mi trayectoria.",
+    "grid": {
+      "0": {
+        "name": "Frontend",
+        "description": "Experiencia de usuario y diseño de interfaces."
+      },
+      "1": {
+        "name": "Backend",
+        "description": "Persistencia de información y flujo de datos."
+      },
+      "2": {
+        "name": "DevOps",
+        "description": "Ciclo de CI/CD y despliegue de proyectos."
+      },
+      "3": {
+        "name": "Testing",
+        "description": "Comprobación de calidad y entrega funcional de producto."
+      },
+      "4": {
+        "name": "Herramientas",
+        "description": "Software obligatorio en el ciclo de desarrollo."
+      },
+      "5": {
+        "name": "Aprendiendo actualmente",
+        "description": "Tecnologías en formación presente y futura."
+      }
+    },
+    "lang": {
+      "title": "Idiomas",
+      "description": "Comunicación con el entorno y compresión del negocio.",
+      "languages": {
+        "0": {
+          "name": "Español",
+          "level": "Nativo"
+        },
+        "1": {
+          "name": "Inglés",
+          "level": "C1  ·  Avanzado"
+        }
+      }
+    }
+  },
   "footer": {
     "primaryText": "El presente portal es un proyecto que refleja y complementa mi formacion y experiencia. Fue diseñado con mucho amor y entusiasmo con el objetivo de mostrar al mundo lo que soy capaz de hacer como un ser humano lleno de imaginacion.",
     "secondaryText": {
@@ -75,7 +119,7 @@
     "navigation": {
       "title": "Recorrer el sitio",
       "options": {
-        "0": "CV y habilidades",
+        "0": "Habilidades, herramientas e idiomas.",
         "1": "Huellitas",
         "2": "Proyectos",
         "3": "Experiencia",

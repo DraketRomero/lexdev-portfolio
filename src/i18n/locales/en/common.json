@@ -1,6 +1,6 @@
 {
   "nav": {
-    "resume": "Resume and Skills",
+    "resume": "Skills, tools and languages",
     "projects": "Projects",
     "experience": "Experience",
     "aboutMe": "About me",
@@ -61,6 +61,50 @@
       "textButtonPromiseBottiom": "Sending..."
     }
   },
+    "skills": {
+    "title": "Skills and tools",
+    "subtitle": "Frameworks and languages I have worked with throughout my career",
+    "grid": {
+      "0": {
+        "name": "Frontend",
+        "description": "User Experience and Interface Design."
+      },
+      "1": {
+        "name": "Backend",
+        "description": "Data persistence and data flow."
+      },
+      "2": {
+        "name": "DevOps",
+        "description": "CI/CD Cycle and Project Deployment."
+      },
+      "3": {
+        "name": "Testing",
+        "description": "Quality assurance and functional product delivery."
+      },
+      "4": {
+        "name": "Tools",
+        "description": "Required software in the development cycle."
+      },
+      "5": {
+        "name": "Currently learning",
+        "description": "Current and Future Technologies in Education."
+      }
+    },
+    "lang": {
+      "title": "Languages",
+      "description": "Communication with the community and understanding of the business.",
+      "languages": {
+        "0": {
+          "name": "Spanish",
+          "level": "Native"
+        },
+        "1": {
+          "name": "English",
+          "level": "C1  ·  Advanced"
+        }
+      }
+    }
+  },
   "footer": {
     "primaryText": "This website is a project that reflects and complements my education and experience. It was designed with a great deal of love and enthusiasm, with the goal of showing the world what I am capable of as a person full of imagination.",
     "secondaryText": {
@@ -75,7 +119,7 @@
     "navigation": {
       "title": "Browse the site",
       "options": {
-        "0": "Resume and Skills",
+        "0": "Skills, tools and languages",
         "1": "Footprints",
         "2": "Projects",
         "3": "Experience",
