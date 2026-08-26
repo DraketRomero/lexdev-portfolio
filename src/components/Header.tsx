@@ -41,7 +41,7 @@ export const Header = () => {
                     <div className='burger-container'>
                         <button className='burger-button' onClick={handleShowMenuBurguerOptions}>
                             {
-                                isOpen ? <BurgerIcon /> : <CloseIcon />
+                                isOpen ? <BurgerIcon width={18} height={18} /> : <CloseIcon width={18} height={18} />
                             }
                         </button>
                     </div>
@@ -108,7 +108,7 @@ export const Header = () => {
                                 <div>
                                     <button className='theme-toggle-button' onClick={toggleTheme}>
                                         <div className='logo-item-container'>
-                                            <div className='logo-theme-container'>{isDarkTheme ? <SunIcon /> : <MoonIcon />}</div>
+                                            <div className='logo-theme-container'>{isDarkTheme ? <SunIcon width={15} height={15} /> : <MoonIcon width={15} height={15} />}</div>
                                         </div>
                                     </button>
                                 </div>
