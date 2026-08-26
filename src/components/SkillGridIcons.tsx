@@ -1,15 +1,16 @@
 import type { ISkillGrid } from "./interfaces/ISkillGrid";
 import { SkillIconComponent } from "./SkillIconComponent";
+import './css/skillGridIcon.css'
 
 export const SkillGridIcons = ({ main_title, description, technologies }: ISkillGrid) => {
     return (
-        <div style={{ padding: "25px 0 30px 0", borderBottom: "1px solid var(--secondary-color)" }}>
+        <div className='skill-grid-container'>
             <div>
-                <p style={{ fontFamily: "'Fraunces'", fontWeight: "bolder", fontSize: "25px", fontStyle: "italic" }}>{main_title}</p>
-                <p style={{ color: "var(--secondary-color)", padding: "10px 0 0 0", fontSize: "13px" }}>{description}</p>
+                <p className='resume-title'>{main_title}</p>
+                <p className='resume-description'>{description}</p>
             </div>
 
-            <div style={{ padding: "30px 0 0 0", display: "grid", gridTemplateColumns: "repeat(1, 1fr)", gridAutoRows: "minmax(200px)", gap: "50px", textAlign: "center" }}>
+            <div className='skill-grid-table'>
                 {technologies.map((c, i) => (<SkillIconComponent key={i} section={c.section} tools={c.tools} />))}
             </div>
         </div>

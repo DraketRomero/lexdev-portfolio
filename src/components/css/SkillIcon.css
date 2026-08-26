@@ -1,0 +1,30 @@
+.title-category-icon {
+    text-align: left;
+    padding: 0 0 20px 0;
+    font-weight: bold;
+}
+
+.category-icon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+}
+
+.card {
+    transform: translateY(0) rotate(0deg);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-6px) rotate(-3deg);
+}
+
+.icon-design {
+    color: "var(--secondary-text)"
+}
+
+.icon-name {
+    color: "var(--secondary-color)"
+}
