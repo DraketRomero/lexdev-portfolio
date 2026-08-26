@@ -2,6 +2,7 @@ import type { RouteObject } from 'react-router';
 import { HomePage } from '../pages/HomePage';
 import { LayoutPage } from '../pages/LayoutPage';
 import { ContactPage } from '../pages/ContactPage';
+import { ResumePage } from '../pages/ResumePage';
 
 export const routes: RouteObject[] = [
     {
@@ -14,7 +15,7 @@ export const routes: RouteObject[] = [
             },
             {
                 path: 'resume',
-                element: <p style={{ color: "white" }}>Resume</p>
+                element: <ResumePage />
             },
             {
                 path: 'about-me',
