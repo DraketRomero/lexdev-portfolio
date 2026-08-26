@@ -102,7 +102,9 @@ export const LanguageSelector = () => {
                 aria-expanded={isOpen}
                 aria-haspopup="listbox"
             >
-                <span className="icon-idioms">{LanguageIcon}</span>
+                <span className="icon-idioms">
+                    <LanguageIcon width={20} height={20}  />
+                </span>
                 {selected}
                 <span className={`lang-selector-arrow ${isOpen ? 'lang-selector-arrow-open' : ''}`} />
             </button>
