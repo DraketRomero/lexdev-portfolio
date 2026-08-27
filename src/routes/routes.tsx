@@ -14,7 +14,7 @@ export const routes: RouteObject[] = [
                 element: <HomePage />
             },
             {
-                path: 'resume',
+                path: 'skills-and-tools',
                 element: <ResumePage />
             },
             {
