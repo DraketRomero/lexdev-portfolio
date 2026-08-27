@@ -3,9 +3,11 @@ import {
     AzureIcon, 
     CppIcon, 
     CSharpIcon, 
+    DotNetIcon,
     ExpressIcon, 
     GoIcon, 
     GraphQLIcon, 
+    HibernateIcon,
     JavaIcon, 
     JWTIcon, 
     LaravelIcon, 
@@ -21,9 +23,10 @@ import {
     RustIcon, 
     SpringBootIcon, 
     SQLIcon, 
+    SQLServerIcon,
     SymfonyIcon, 
     TokioIcon, 
-    TypeScriptIcon 
+    TypeScriptIcon,
 } from '../assets/icons';
 import type { ITechComponent } from '../components/interfaces/ITechComponent';
 
@@ -52,7 +55,7 @@ export const backendIcons: ITechComponent[] = [
             { name: "NodeJs", Icon: NodeJsIcon },
             { name: "Express", Icon: ExpressIcon },
             { name: "NestJs", Icon: NestJsIcon },
-            { name: ".NET", Icon: CSharpIcon },
+            { name: ".NET", Icon: DotNetIcon },
             { name: "Laravel", Icon: LaravelIcon },
             { name: "Symfony", Icon: SymfonyIcon },
             { name: "Tokio", Icon: TokioIcon },
@@ -63,11 +66,11 @@ export const backendIcons: ITechComponent[] = [
         tools: [
             { name: "MongoDB", Icon: MongoDBIcon },
             { name: "MySQL", Icon: MySQLIcon },
-            { name: "SQLServer", Icon: SQLIcon },
+            { name: "SQLServer", Icon: SQLServerIcon },
             { name: "Oracle", Icon: SQLIcon },
             { name: "PostgreSQL", Icon: PostgreSQLIcon },
             { name: "Prisma", Icon: PrismaIcon },
-            { name: "Hibernate", Icon: JavaIcon },
+            { name: "Hibernate", Icon: HibernateIcon },
         ]
     },
     {
