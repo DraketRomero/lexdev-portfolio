@@ -53,8 +53,8 @@ export const Header = () => {
                                 <Button
                                     className='menu-option button-header'
                                     routeName={t('nav.skills')}
-                                    routeDestination='/skills'
-                                    active={pathname == '/skills'}
+                                    routeDestination='/skills-and-tools'
+                                    active={pathname == '/skills-and-tools'}
                                 />
                             </li>
 
