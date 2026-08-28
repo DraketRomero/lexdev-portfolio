@@ -11,13 +11,13 @@ interface ButtonProps {
     fnCloseBurgerIcon: () => void;
 }
 
-export const Button = ({ className, routeName, routeDestination, active }: ButtonProps) => {
+export const Button = ({ className, routeName, routeDestination, active, fnCloseBurgerIcon }: ButtonProps) => {
     const [isPressed, setIsPressed] = useState<boolean>(false);
 
     return (
         <NavLink to={routeDestination} viewTransition>
             <button className={`button menu-option ${className} ${isPressed && active ? 'button-unactive' : ''}`}
-                onMouseDown={() => setIsPressed(true)}
+                onMouseDown={() => setIsPressed(true)} onClick={fnCloseBurgerIcon}
             >
                 {routeName}
             </button>
