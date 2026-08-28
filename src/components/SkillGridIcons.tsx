@@ -1,8 +1,11 @@
 import type { ISkillGrid } from "./interfaces/ISkillGrid";
 import { SkillIconComponent } from "./SkillIconComponent";
 import './css/skillGridIcon.css'
+import { useTranslation } from "react-i18next";
 
 export const SkillGridIcons = ({ main_title, description, technologies }: ISkillGrid) => {
+    const { t } = useTranslation();
+
     return (
         <div className='skill-grid-container'>
             <div>
@@ -11,7 +14,7 @@ export const SkillGridIcons = ({ main_title, description, technologies }: ISkill
             </div>
 
             <div className='skill-grid-table'>
-                {technologies.map((c, i) => (<SkillIconComponent key={i} section={c.section} tools={c.tools} />))}
+                {technologies.map((c, i) => (<SkillIconComponent key={i} section={t(c.section)} tools={c.tools} />))}
             </div>
         </div>
     )
