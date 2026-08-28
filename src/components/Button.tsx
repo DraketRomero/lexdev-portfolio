@@ -8,6 +8,7 @@ interface ButtonProps {
     routeName: string;
     routeDestination: string;
     active?: boolean;
+    fnCloseBurgerIcon: () => void;
 }
 
 export const Button = ({ className, routeName, routeDestination, active }: ButtonProps) => {
