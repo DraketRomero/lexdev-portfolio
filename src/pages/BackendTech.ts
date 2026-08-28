@@ -33,7 +33,7 @@ import type { ITechComponent } from '../components/interfaces/ITechComponent';
 
 export const backendIcons: ITechComponent[] = [
     {
-        section: "Lenguajes",
+        section: "skills.grid.1.subtitles.0",
         tools: [
             { name: "Java", Icon: JavaIcon },
             { name: "TypeScript", Icon: TypeScriptIcon },
@@ -62,7 +62,7 @@ export const backendIcons: ITechComponent[] = [
         ]
     },
     {
-        section: "Bases de datos y ORM's",
+        section: "skills.grid.1.subtitles.1",
         tools: [
             { name: "MongoDB", Icon: MongoDBIcon },
             { name: "MySQL", Icon: MySQLIcon },
@@ -74,7 +74,7 @@ export const backendIcons: ITechComponent[] = [
         ]
     },
     {
-        section: "Clouds",
+        section: "skills.grid.1.subtitles.2",
         tools: [
             { name: "Azure", Icon: AzureIcon },
             { name: "AWS", Icon: AWSIcon },

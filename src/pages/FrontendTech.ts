@@ -32,7 +32,7 @@ export const frontendIcons: ITechComponent[] = [
         ]
     },
     {
-        section: "Gestion de estado",
+        section: "skills.grid.0.subtitles",
         tools: [
             { name: "Redux", Icon: ReduxIcon },
             { name: "Zustand", Icon: ZustandIcon },

@@ -11,7 +11,7 @@ import type { ITechComponent } from '../components/interfaces/ITechComponent';
 
 export const toolsIcons: ITechComponent[] = [
     {
-        section: "IDE'S",
+        section: "skills.grid.4.subtitles.0",
         tools: [
             { name: "VsCode", Icon: VSCodeIcon },
             { name: "Zed", Icon: ZedIcon },
@@ -19,20 +19,20 @@ export const toolsIcons: ITechComponent[] = [
         ]
     },
     {
-        section: "Versionamiento",
+        section: "skills.grid.4.subtitles.1",
         tools: [
             { name: "Git", Icon: GitIcon },
             { name: "GitHub", Icon: GithubIcon },
         ]
     },
     {
-        section: "Consumo de REST API's",
+        section: "skills.grid.4.subtitles.2",
         tools: [
             { name: "Postman", Icon: PostmanIcon },
         ]
     },
     {
-        section: "IA",
+        section: "skills.grid.4.subtitles.3",
         tools: [
             { name: "Claude Code", Icon: ClaudeIcon },
         ]
