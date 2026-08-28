@@ -22,9 +22,9 @@
 }
 
 .icon-design {
-    color: "var(--secondary-text)"
+    color: var(--secondary-text)
 }
 
 .icon-name {
-    color: "var(--secondary-color)"
+    color: var(--secondary-color)
 }
