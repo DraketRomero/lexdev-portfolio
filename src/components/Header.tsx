@@ -55,6 +55,7 @@ export const Header = () => {
                                     routeName={t('nav.skills')}
                                     routeDestination='/skills-and-tools'
                                     active={pathname == '/skills-and-tools'}
+                                    fnCloseBurgerIcon={handleShowMenuBurguerOptions}
                                 />
                             </li>
 
@@ -64,6 +65,7 @@ export const Header = () => {
                                     routeName={t('nav.projects')}
                                     routeDestination='/projects'
                                     active={pathname == '/projects'}
+                                    fnCloseBurgerIcon={handleShowMenuBurguerOptions}
                                 />
                             </li>
 
@@ -73,6 +75,7 @@ export const Header = () => {
                                     routeName={t('nav.experience')}
                                     routeDestination='/experience'
                                     active={pathname == '/experience'}
+                                    fnCloseBurgerIcon={handleShowMenuBurguerOptions}
                                 />
                             </li>
 
@@ -82,6 +85,7 @@ export const Header = () => {
                                     routeName={t('nav.aboutMe')}
                                     routeDestination='/about-me'
                                     active={pathname == '/about-me'}
+                                    fnCloseBurgerIcon={handleShowMenuBurguerOptions}
                                 />
                             </li>
 
@@ -92,6 +96,7 @@ export const Header = () => {
                                     routeName={'Huellitas'}
                                     routeDestination='/projects'
                                     active={pathname == '/projects'}
+                                    fnCloseBurgerIcon={handleShowMenuBurguerOptions}
                                 />
                             </li>
 
@@ -101,6 +106,7 @@ export const Header = () => {
                                     routeName={t('nav.contact')}
                                     routeDestination='/contact'
                                     active={pathname == '/contact'}
+                                    fnCloseBurgerIcon={handleShowMenuBurguerOptions}
                                 />
                             </li>
 
