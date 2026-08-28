@@ -58,7 +58,7 @@ export const ResumePage = () => {
 
             <div className='resume-idioms-container education-container'>
                 <div>
-                    <p className='resume-title'>Educacion</p>
+                    <p className='resume-title'>{t('skills.education.0')}</p>
                 </div>
 
                 <div>
@@ -69,10 +69,10 @@ export const ResumePage = () => {
                             </div>
 
                             <div>
-                                <p className='formation-title-name'>Ingenieria en Tecnologias de la informacion y Comunicaciones</p>
-                                <p className='school-title-name'>Instituto Tecnologico de Puebla</p>
-                                <p className='location-school'>Puebla, Pue.</p>
-                                <p className='timeline-school-studied'>Ago. 2014 - Dic. 2019</p>
+                                <p className='formation-title-name'>{t('skills.education.1')}</p>
+                                <p className='school-title-name'>Instituto Tecnológico de Puebla</p>
+                                <p className='location-school'>Puebla, México.</p>
+                                <p className='timeline-school-studied'>{t('skills.education.dates.0.start')}. 2014 - {t('skills.education.dates.0.end')}. 2019</p>
                             </div>
                         </div>
 
@@ -82,10 +82,10 @@ export const ResumePage = () => {
                             </div>
 
                             <div>
-                                <p className='formation-title-name'>PTB. Mantenimiento de equipo de computo y control digital.</p>
-                                <p className='school-title-name'>CONALEP (Colegio Nacional de Educacion Prfesional Tecnica)</p>
-                                <p className='location-school'>Puebla, Pue.</p>
-                                <p className='timeline-school-studied'>Ago. 2011 - Jul. 2014</p>
+                                <p className='formation-title-name'>{t('skills.education.2')}</p>
+                                <p className='school-title-name'>CONALEP (Colegio Nacional de Educación Profesional Técnica)</p>
+                                <p className='location-school'>Puebla, México</p>
+                                <p className='timeline-school-studied'>{t('skills.education.dates.1.start')}. 2011 - {t('skills.education.dates.1.end')}. 2014</p>
                             </div>
                         </div>
                     </div>
