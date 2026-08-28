@@ -1,4 +1,5 @@
 import { 
+    ClaudeIcon,
     GithubIcon, 
     GitIcon, 
     IntelliJIDEAIcon, 
@@ -28,6 +29,12 @@ export const toolsIcons: ITechComponent[] = [
         section: "Consumo de REST API's",
         tools: [
             { name: "Postman", Icon: PostmanIcon },
+        ]
+    },
+    {
+        section: "IA",
+        tools: [
+            { name: "Claude Code", Icon: ClaudeIcon },
         ]
     },
 ];

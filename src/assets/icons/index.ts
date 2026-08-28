@@ -6,6 +6,7 @@ export { AzureIcon } from "./AzureIcon";
 export { BoostrapIcon } from './BoostrapIcon';
 export { BurgerIcon } from './BurgerIcon';
 export { CheckIcon } from './CheckIcon';
+export { ClaudeIcon } from "./ClaudeIcon";
 export { CloseIcon } from "./CloseIcon";
 export { ContactFilledIcon } from './ContactFilledIcon';
 export { ContactOutlinedIcon } from './ContactOutlinedIcon';
