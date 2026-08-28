@@ -35,21 +35,21 @@ export const ResumePage = () => {
                 <div className='skill-grid-table'>
                     <div className="resume-idiom">
                         <div>
-                            <p>{t('skills.lang.languages.0.name')}</p>
+                            <p className='language-name'>{t('skills.lang.languages.0.name')}</p>
                         </div>
 
                         <div>
-                            <p>{t('skills.lang.languages.0.level')}</p>
+                            <p className='language-level'>{t('skills.lang.languages.0.level')}</p>
                         </div>
                     </div>
 
                     <div className="resume-idiom">
                         <div>
-                            <p>{t('skills.lang.languages.1.name')}</p>
+                            <p className='language-name'>{t('skills.lang.languages.1.name')}</p>
                         </div>
 
                         <div>
-                            <p>{t('skills.lang.languages.1.level')}</p>
+                            <p className='language-level'>{t('skills.lang.languages.1.level')}</p>
                         </div>
                     </div>
                 </div>
