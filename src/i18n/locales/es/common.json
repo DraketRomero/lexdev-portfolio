@@ -67,23 +67,35 @@
     "grid": {
       "0": {
         "name": "Frontend",
-        "description": "Experiencia de usuario y diseño de interfaces."
+        "description": "Experiencia de usuario y diseño de interfaces.",
+        "subtitles": "Gestión de estado"
       },
       "1": {
         "name": "Backend",
-        "description": "Persistencia de información y flujo de datos."
+        "description": "Persistencia de información y flujo de datos.",
+        "subtitles": {
+          "0": "Lenguajes",
+          "1": "Bases de datos y modelado.",
+          "2": "Infraestructuras de nube"
+        }
       },
       "2": {
         "name": "DevOps",
         "description": "Ciclo de CI/CD y despliegue de proyectos."
       },
       "3": {
-        "name": "Testing",
+        "name": "Pruebas",
         "description": "Comprobación de calidad y entrega funcional de producto."
       },
       "4": {
         "name": "Herramientas",
-        "description": "Software obligatorio en el ciclo de desarrollo."
+        "description": "Software obligatorio en el ciclo de desarrollo.",
+        "subtitles": {
+          "0": "Entornos de desarrollo",
+          "1": "Versionamiento",
+          "2": "Consumo de REST API",
+          "3": "IA"
+        }
       },
       "5": {
         "name": "Aprendiendo actualmente",
@@ -101,6 +113,21 @@
         "1": {
           "name": "Inglés",
           "level": "C1  ·  Avanzado"
+        }
+      }
+    },
+    "education": {
+      "0": "Educación",
+      "1": "Ingeniería en Tecnologías de la Información y Comunicaciones",
+      "2": "PTB. Mantenimiento de equipo de cómputo y control digital.",
+      "dates": {
+        "0": {
+          "start": "Ago",
+          "end": "Dic"
+        },
+        "1": {
+          "start": "Ago",
+          "end": "Jul"
         }
       }
     }

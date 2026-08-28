@@ -61,17 +61,23 @@
       "textButtonPromiseBottiom": "Sending..."
     }
   },
-    "skills": {
+  "skills": {
     "title": "Skills and tools",
     "subtitle": "Frameworks and languages I have worked with throughout my career",
     "grid": {
       "0": {
         "name": "Frontend",
-        "description": "User Experience and Interface Design."
+        "description": "User Experience and Interface Design.",
+        "subtitles": "State management"
       },
       "1": {
         "name": "Backend",
-        "description": "Data persistence and data flow."
+        "description": "Data persistence and data flow.",
+        "subtitles": {
+          "0": "Languages",
+          "1": "Databases and ORM",
+          "2": "Cloud Infrastructure"
+        }
       },
       "2": {
         "name": "DevOps",
@@ -83,7 +89,13 @@
       },
       "4": {
         "name": "Tools",
-        "description": "Required software in the development cycle."
+        "description": "Required software in the development cycle.",
+        "subtitles": {
+          "0": "IDE's",
+          "1": "Versioning",
+          "2": "REST API usage",
+          "3": "AI"
+        }
       },
       "5": {
         "name": "Currently learning",
@@ -101,6 +113,21 @@
         "1": {
           "name": "English",
           "level": "C1  ·  Advanced"
+        }
+      }
+    },
+    "education": {
+      "0": "Education",
+      "1": "Information and Communications Technology Engineering",
+      "2": "PTB. Maintenance of computer and digital control equipment.",
+      "dates": {
+        "0": {
+          "start": "Aug",
+          "end": "Dec"
+        },
+        "1": {
+          "start": "Aug",
+          "end": "Jul"
         }
       }
     }
