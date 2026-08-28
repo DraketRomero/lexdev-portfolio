@@ -47,3 +47,43 @@
 .language-level {
     color: var(--secondary-text);
 }
+
+.education-container {
+    padding-top: 40px;
+    border-top: 1px solid var(--secondary-text);
+}
+
+.information-education-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.icon-education-container {
+    padding-right: 15px;
+}
+
+.formation-title-name {
+    font-size: 14px;
+    color: var(--secondary-text);
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.school-title-name {
+    font-size: 13px;
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.location-school {
+    font-size: 12px;
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.timeline-school-studied {
+    font-size: 12px;
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+}

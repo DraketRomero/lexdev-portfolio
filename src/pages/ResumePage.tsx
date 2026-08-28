@@ -7,6 +7,7 @@ import { TestingIcons } from "./TestingTech"
 import { toolsIcons } from "./ToolsTech"
 import { useTranslation } from 'react-i18next';
 import './css/resumePage.css'
+import { SkillsFilledIcon } from "../assets/icons"
 
 export const ResumePage = () => {
     const { t } = useTranslation();
@@ -50,6 +51,42 @@ export const ResumePage = () => {
 
                         <div>
                             <p className='language-level'>{t('skills.lang.languages.1.level')}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='resume-idioms-container education-container'>
+                <div>
+                    <p className='resume-title'>Educacion</p>
+                </div>
+
+                <div>
+                    <div>
+                        <div className='information-education-container'>
+                            <div className='icon-education-container'>
+                                <SkillsFilledIcon width={20} height={20} />
+                            </div>
+
+                            <div>
+                                <p className='formation-title-name'>Ingenieria en Tecnologias de la informacion y Comunicaciones</p>
+                                <p className='school-title-name'>Instituto Tecnologico de Puebla</p>
+                                <p className='location-school'>Puebla, Pue.</p>
+                                <p className='timeline-school-studied'>Ago. 2014 - Dic. 2019</p>
+                            </div>
+                        </div>
+
+                        <div className='information-education-container'>
+                            <div className='icon-education-container'>
+                                <SkillsFilledIcon width={20} height={20} />
+                            </div>
+
+                            <div>
+                                <p className='formation-title-name'>PTB. Mantenimiento de equipo de computo y control digital.</p>
+                                <p className='school-title-name'>CONALEP (Colegio Nacional de Educacion Prfesional Tecnica)</p>
+                                <p className='location-school'>Puebla, Pue.</p>
+                                <p className='timeline-school-studied'>Ago. 2011 - Jul. 2014</p>
+                            </div>
                         </div>
                     </div>
                 </div>
