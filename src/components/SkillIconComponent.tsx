@@ -9,7 +9,7 @@ export const SkillIconComponent = ({ section, tools }: ITechComponent) => {
         {
           tools.map(({ name, Icon }, i) => (
             <div key={i} className='card'>
-              <div className='icon-design'><Icon width={50} height={50} /></div>
+              <div className='icon-design'><Icon width={40} height={40} /></div>
               <div className='icon-name'>{name}</div>
             </div>
           ))
