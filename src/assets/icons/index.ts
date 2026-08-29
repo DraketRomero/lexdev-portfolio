@@ -63,6 +63,7 @@ export { RustIcon } from "./RustIcon";
 export { RxJSIcon } from "./RxJSIcon";
 export { SkillsFilledIcon } from "./SkillsFilledIcon";
 export { SkillsOutlinedIcon } from "./SkillsOutlinedIcon";
+export { SonarqubeIcon } from "./SonarqubeIcon";
 export { SpringBootIcon } from "./SpringBootIcon";
 export { SQLIcon } from './SQLIcon';
 export { SQLServerIcon } from './SQLServerIcon';
