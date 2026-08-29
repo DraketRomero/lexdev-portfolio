@@ -3,12 +3,13 @@ import {
     AngularIcon, 
     BoostrapIcon, 
     CSSIcon, 
+    HTMLIcon,
     MaterialUIIcon, 
     NextJsIcon, 
     ReduxIcon, 
     RxJSIcon, 
     TailwindIcon, 
-    ZustandIcon 
+    ZustandIcon, 
 } from "../assets/icons";
 import type { ITechComponent } from "../components/interfaces/ITechComponent";
 
@@ -16,6 +17,7 @@ export const frontendIcons: ITechComponent[] = [
     {
         section: "Frameworks",
         tools: [
+            { name: "HTML", Icon: HTMLIcon },
             { name: "React", Icon: ReactIcon },
             { name: "Angular", Icon: AngularIcon },
             { name: "NextJs", Icon: NextJsIcon },
