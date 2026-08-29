@@ -3,6 +3,7 @@ import { HomePage } from '../pages/HomePage';
 import { LayoutPage } from '../pages/LayoutPage';
 import { ContactPage } from '../pages/ContactPage';
 import { ResumePage } from '../pages/ResumePage';
+import { AboutMePage } from '../pages/AboutMePage';
 
 export const routes: RouteObject[] = [
     {
@@ -19,7 +20,7 @@ export const routes: RouteObject[] = [
             },
             {
                 path: 'about-me',
-                element: <p style={{ color: "white" }}>Nnenuco</p>
+                element: <AboutMePage />
             },
             {
                 path: 'projects',
