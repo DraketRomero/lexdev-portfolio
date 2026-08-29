@@ -1,3 +1,4 @@
+import { SonarqubeIcon } from "../assets/icons";
 import { DockerIcon } from "../assets/icons/DockerIcon";
 import { JenkinsIcon } from "../assets/icons/JenkinsIcon";
 import { KafkaIcon } from "../assets/icons/KafkaIcon";
@@ -14,6 +15,7 @@ export const DevOpsIcons: ITechComponent[] = [
             { name: "Linux", Icon: LinuxIcon },
             { name: "Docker", Icon: DockerIcon },
             { name: "Kubernetes", Icon: KubernetesIcon },
+            { name: "Sonarqube", Icon: SonarqubeIcon },
         ]
     },
 ];
