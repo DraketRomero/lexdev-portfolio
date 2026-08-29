@@ -1,68 +1,69 @@
 import { BookIcon, GymIcon, MusicIcon, TVIcon, VidegameIcon } from "../assets/icons"
 import bunnie from './../assets/img/bunnie2.webp';
+import './css/aboutMePage.css'
 
 export const AboutMePage = () => {
     return(
-        <div style={{ width: "100%", padding: "0 40px 0 40px" }}>
-            <div style={{ padding: "35px 0 50px 0", borderBottom: "1px solid var(--base-variant)" }}>
+        <div className='aboutme-main-container'>
+            <div className='aboutme-description-container'>
                 <div style={{ color: "var(--secondary-text)" }}>
-                    <p style={{ fontSize: "25px", fontFamily: "'Fraunces'", fontWeight: "bolder", fontStyle: "italic", color: "var(--text-color)" }}>Sobre Mi</p>
-                    <p style={{ fontSize: "12px", paddingTop: "25px" }}>
+                    <p className='aboutme-title'>Sobre Mi</p>
+                    <p className='aboutme-description'>
                         Desarrollador full-stack con más de 6 años de experiencia en el diseño y la implementación de aplicaciones web escalables y API RESTful.
                     </p>
-                    <p style={{ fontSize: "12px", paddingTop: "10px" }}>
+                    <p className='aboutme-description'>
                         Experiencia práctica en pruebas automatizadas, patrones de diseño y sistemas de mensajería asíncrona.
                     </p>
-                    <p style={{ fontSize: "12px", paddingTop: "10px" }}>
+                    <p className='aboutme-description'>
                         Sólida formación en implementaciones en la nube en AWS/Azure y procesos de CI/CD.
                     </p>
-                    <p style={{ fontSize: "12px", paddingTop: "10px" }}>
+                    <p className='aboutme-description'>
                         Comprometido con el código limpio, los principios SOLID, las mejores prácticas de revisión de código y la arquitectura de nivel empresarial.
                     </p>
-                    <p style={{ fontSize: "12px", paddingTop: "10px" }}>
+                    <p className='aboutme-description'>
                         Aplico de forma activa los estándares de accesibilidad (WCAG 2.1) y las técnicas de optimización del rendimiento, incluyendo componentes independientes, señales, carga diferida y la estrategia de detección de cambios OnPush.
                     </p>
                 </div>
             </div>
 
-            <div style={{ padding: "40px 0 0 0" }}>
-                <div style={{ color: "var(--secondary-text)" }}>
-                    <p style={{ fontSize: "22px", fontFamily: "'Fraunces'", fontWeight: "bolder", fontStyle: "italic", color: "var(--text-color)" }}>Hobbies e intereses</p>
-                    <p style={{ fontSize: "13px", paddingTop: "20px" }}>
+            <div className='aboutme-hobbies-main-container'>
+                <div className='aboutme-hobbies-container'>
+                    <p className='aboutme-title'>Hobbies e intereses</p>
+                    <p className='aboutme-description'>
                         Actividades que me gusta hacer más allá del IDE.
                     </p>
 
-                    <div style={{ border: "1px solid var(--base-variant)", margin: "40px 0 0 0", borderRadius: "10px", padding: "10px 20px", boxShadow: "4px 6px var(--text-color)" }}>
-                        <div style={{ display: "flex", fontSize: "15px", padding: "10px 10px", borderBottom: "1px solid var(--base-variant)" }}>
-                            <div style={{ paddingRight: "10px" }}>
+                    <div className='card-hobbie'>
+                        <div className='card-hobbie-title-main-container'>
+                            <div className='card-hobbie-icon-container'>
                                 <MusicIcon width={18} height={18} />
                             </div>
-                            <div>
-                                <p>
+                            <div className='card-hobbie-title-container'>
+                                <p style={{ padding: "0 0 5px 0"}}> 
                                     Música
                                 </p>
                             </div>
                         </div>
 
-                        <div style={{ padding: "20px 0 20px 0", borderBottom: "1px solid var(--base-variant)" }}>
-                            <p style={{ fontSize: "13px" }}>
+                        <div className='card-hobbie-description-container'>
+                            <p className='card-hobbie-description'>
                                 Desde muy pequeño siempre me gustó la música y conforme fui creciendo, uno de mis sueños era aprender a tocar la guitarra. Durante la secundaria tuve la oportunidad de integrarme a la rondalla estudiantil y desde entonces no he dejado de tocar. En mis tiempos libres suelo aprender nuevas canciones y cantarlas a todo pulmon. Tambien suelo practicar mucho mi canto.
                             </p>
                         </div>
 
-                        <div style={{ position: "relative", maxWidth: "1000px", margin: "30px auto" }}>
-                            <div style={{ display: "flex", aspectRatio: "16 / 9", overflowX: "hidden", scrollSnapType: "x mandatory", scrollBehavior: "smooth", boxShadow: "0 .25rem .5rem #21212126", borderRadius: ".5rem" }}>
-                                <img src={bunnie} alt="Bunnie" id="img-music-1" style={{ flex: "1 0 100%", scrollSnapAlign: "start", objectFit: "contain" }} />
-                                <img src={bunnie} alt="Bunnie" id="img-music-2" style={{ flex: "1 0 100%", scrollSnapAlign: "start", objectFit: "contain" }} />
-                                <img src={bunnie} alt="Bunnie" id="img-music-3" style={{ flex: "1 0 100%", scrollSnapAlign: "start", objectFit: "contain" }} />
-                                <img src={bunnie} alt="Bunnie" id="img-music-4" style={{ flex: "1 0 100%", scrollSnapAlign: "start", objectFit: "contain" }} />
+                        <div className='card-hobbie-carrusel-main-container'>
+                            <div className='card-hobbie-images-container'>
+                                <img src={bunnie} alt="Bunnie" id="img-music-1" className='card-hobbie-image' />
+                                <img src={bunnie} alt="Bunnie" id="img-music-2" className='card-hobbie-image' />
+                                <img src={bunnie} alt="Bunnie" id="img-music-3" className='card-hobbie-image' />
+                                <img src={bunnie} alt="Bunnie" id="img-music-4" className='card-hobbie-image' />
                             </div>
 
-                            <div style={{ display: "flex", columnGap: "1rem", position: "absolute", bottom: "1.25rem", left: "50%", transform: "translateX(-50%)", zIndex: "1" }}>
-                                <a href="#img-music-1" style={{ width: ".5rem", height: ".5rem", borderRadius: "50%", backgroundColor: "white", opacity: ".75", transition: "opacity ease 250ms" }} ></a>
-                                <a href="#img-music-2" style={{ width: ".5rem", height: ".5rem", borderRadius: "50%", backgroundColor: "white", opacity: ".75", transition: "opacity ease 250ms" }} ></a>
-                                <a href="#img-music-3" style={{ width: ".5rem", height: ".5rem", borderRadius: "50%", backgroundColor: "white", opacity: ".75", transition: "opacity ease 250ms" }} ></a>
-                                <a href="#img-music-4" style={{ width: ".5rem", height: ".5rem", borderRadius: "50%", backgroundColor: "white", opacity: ".75", transition: "opacity ease 250ms" }} ></a>
+                            <div className='card-hobbie-navigation-container'>
+                                <a href="#img-music-1" className='card-hobbie-image-link' ></a>
+                                <a href="#img-music-2" className='card-hobbie-image-link' ></a>
+                                <a href="#img-music-3" className='card-hobbie-image-link' ></a>
+                                <a href="#img-music-4" className='card-hobbie-image-link' ></a>
                             </div>
                         </div>
                     </div>
