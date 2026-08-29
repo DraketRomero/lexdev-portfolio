@@ -28,6 +28,7 @@ export { GitIcon } from './GitIcon';
 export { GoIcon } from './GoIcon';
 export { GraphQLIcon } from './GraphQLIcon';
 export { HibernateIcon } from './HibernateIcon';
+export { HTMLIcon } from './HTMLIcon';
 export { IntelliJIDEAIcon } from './IntelliJIDEAIcon';
 export { JavaIcon } from './JavaIcon';
 export { JenkinsIcon } from './JenkinsIcon';
