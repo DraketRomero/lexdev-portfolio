@@ -1,0 +1,23 @@
+.movie-series-container {
+    padding-top: 20px;
+        color: var(--base-color);
+}
+
+.movie-series-paragraph-description {
+    font-size: 13px;
+}
+
+.movie-series-paragraph-list {
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.movie-series-paragraph-list-container {
+    padding: 10px 0 0 0;
+}
+
+.movie-series-item-list {
+   font-size: 13px;
+   margin: 10px 0 0 45px;
+}
+
