@@ -1,6 +1,7 @@
 .aboutme-main-container {
     width: 100%;
     padding: 0 40px 0 40px;
+    margin: 0 0 90px 0;
 }
 
 .aboutme-description-container {
@@ -28,91 +29,4 @@
 
 .aboutme-hobbies-container {
     color: var(--secondary-text);
-}
-
-.card-hobbie {
-    border: 1px solid var(--base-color);
-    background-color: var(--secondary-text);
-    margin: 40px 0 0 0;
-    border-radius: 10px;
-    padding: 10px 20px;
-    box-shadow: none;
-    transform: translateX(2px);
-    transition: box-shadow 0.10s ease, transform 0.10s ease;
-}
-
-.card-hobbie:hover {
-    box-shadow: 4px 4px var(--bg-icons);
-    transform: translateY(0);
-}
-
-.card-hobbie-title-main-container {
-    display: flex;
-    font-size: 15px;
-    padding: 10px 10px;
-    border-bottom: 1px solid var(--base-color);
-}
-
-.card-hobbie-icon-container {
-    padding-right: 10px;
-    color: var(--primary-color);
-}
-
-.card-hobbie-title-container {
-    font-size: 16px;
-    font-family: 'Fraunces';
-    font-weight: bolder;
-    padding-bottom: 1px;
-    color: var(--primary-color);
-}
-
-.card-hobbie-description-container {
-    padding: 20px 0 20px 0;
-    border-bottom: 1px solid var(--primary-color);
-}
-
-.card-hobbie-description {
-    font-size: 13px;
-    color: var(--primary-color);
-}
-
-.card-hobbie-carrusel-main-container {
-    position: relative;
-    max-width: 1000px;
-    margin: 30px auto;
-}
-
-.card-hobbie-images-container {
-    display: flex;
-    aspect-ratio: 16 / 9;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 .25rem .5rem #21212126;
-    border-radius: .5rem;
-}
-
-.card-hobbie-image {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: contain;
-}
-
-.card-hobbie-navigation-container {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.card-hobbie-image-link {
-    width: .5rem;
-    height: .5rem;
-    border-radius: 50%;
-    background-color: white;
-    opacity: .75;
-    transition: opacity ease 250ms;
 }
