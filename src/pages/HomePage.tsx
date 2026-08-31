@@ -14,6 +14,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 import { ButtonIcon } from '../components/ButtonIcon';
 import { useEmployContext } from '../context/context';
+import { RandomRoleNameComponent } from '../components/RandomRoleNameComponent';
 
 export const HomePage = () => {
     const { t } = useTranslation();
@@ -40,14 +41,7 @@ export const HomePage = () => {
 
                 <div className='dev-info'>
                     <p className='gretting'>{t('hero.greeting')} <span className='wave-icon'>👋</span>{t('hero.pronoun')}<span className='word'>{name}</span></p>
-                    <p className='role'>
-                        Senior
-                        <span
-                            className={`word ${isVisible ? '' : 'hidden'}`}
-                            onTransitionEnd={handleTransitionEnd}>{` ${words[index]} `}
-                        </span>
-                        Engineer
-                    </p>
+                    <RandomRoleNameComponent />
 
                     <div className='description-container'>
                         <p className='description-text'>
