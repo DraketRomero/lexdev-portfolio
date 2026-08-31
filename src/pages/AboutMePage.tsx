@@ -3,8 +3,13 @@ import { CardHobbie } from "../components/CardHobbie";
 import { MovieSeriesList } from "../components/MovieSeriesList.";
 import bunnie from './../assets/img/bunnie2.webp';
 import './css/aboutMePage.css'
+import bunnie2 from '../assets/img/bunnie3.webp';
+import { RandomRoleNameComponent } from "../components/RandomRoleNameComponent";
+import { useEmployContext } from "../context/context";
 
 export const AboutMePage = () => {
+    const { name } = useEmployContext();
+
     return (
         <div className='aboutme-main-container'>
             <div className='aboutme-description-container'>
