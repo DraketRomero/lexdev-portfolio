@@ -19,6 +19,45 @@
     padding-bottom: 15px;
 }
 
+.developer-main-container {
+    display: flex;
+}
+
+.developer-photo-container {
+    padding: 20px 0 20px 0;
+}
+
+.developer-photo-main-container {
+    text-align: center;
+    padding: 0 20px 0 0;
+    border-right: 1px solid var(--secondary-color);
+}
+
+.developer-photo {
+    height: 100px;
+    width: 100px;
+    border-radius: 70%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.developer-name-role-container {
+    width: 100%;
+    align-content: center;
+    padding: 0 0 0 20px;
+}
+
+.developer-name {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 0 10px 0;
+    font-weight: bolder;
+}
+
+.developer-role-container {
+    width: 100%;
+}
+
 .aboutme-description {
     font-size: 12px;
     padding-top: 10px;

@@ -8,23 +8,37 @@ export const AboutMePage = () => {
     return (
         <div className='aboutme-main-container'>
             <div className='aboutme-description-container'>
-                <div style={{ color: "var(--secondary-text)" }}>
-                    <p className='aboutme-title'>Sobre Mi</p>
-                    <p className='aboutme-description'>
-                        Desarrollador full-stack con más de 6 años de experiencia en el diseño y la implementación de aplicaciones web escalables y API RESTful.
-                    </p>
-                    <p className='aboutme-description'>
-                        Experiencia práctica en pruebas automatizadas, patrones de diseño y sistemas de mensajería asíncrona.
-                    </p>
-                    <p className='aboutme-description'>
-                        Sólida formación en implementaciones en la nube en AWS/Azure y procesos de CI/CD.
-                    </p>
-                    <p className='aboutme-description'>
-                        Comprometido con el código limpio, los principios SOLID, las mejores prácticas de revisión de código y la arquitectura de nivel empresarial.
-                    </p>
-                    <p className='aboutme-description'>
-                        Aplico de forma activa los estándares de accesibilidad (WCAG 2.1) y las técnicas de optimización del rendimiento, incluyendo componentes independientes, señales, carga diferida y la estrategia de detección de cambios OnPush.
-                    </p>
+                <div>
+                    <div>
+                        <p className='aboutme-title'>Sobre Mí</p>
+                    </div>
+
+                    <div className='developer-main-container'>
+                        <div className='developer-photo-container'>
+                            <div className='developer-photo-main-container'>
+                                <img src={bunnie2} alt="ProgramaGODr" className='developer-photo' />
+                            </div>
+                        </div>
+
+                        <div className='developer-name-role-container'>
+                            <div>
+                                <p className='developer-name'>{name}</p>
+
+                            </div>
+                            <div className='developer-role-container'>
+                                <RandomRoleNameComponent />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p className='aboutme-description'>
+                            Desarrollador con más de 6 años de experiencia en el diseño y la implementación de aplicaciones web escalables y API RESTful.
+                        </p>
+                        <p className='aboutme-description'>
+                            Comprometido con el código limpio, aplico de forma activa los estándares de accesibilidad y las técnicas de optimización de rendimiento, incluyendo componentes independientes, señales, carga diferida y la estrategia de detección de cambios OnPush.
+                        </p>
+                    </div>
                 </div>
             </div>
 
