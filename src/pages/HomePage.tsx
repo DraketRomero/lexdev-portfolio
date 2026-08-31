@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import bunnie from './../assets/img/bunnie2.webp';
 import './css/homePage.css'
 import {
@@ -17,29 +17,11 @@ import { useEmployContext } from '../context/context';
 
 export const HomePage = () => {
     const { t } = useTranslation();
-    const words = ['Full Stack', 'Software', 'AI'];
-    const [index, setIndex] = useState(0);
-    const [isVisible, setIsVisible] = useState(true);
 
     const { email, name, social_media } = useEmployContext();
 
     const [copied, setCopied] = useState<boolean>(false);
     const timeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setIsVisible(false);
-        }, 1500);
-
-        return () => clearInterval(interval);
-    }, []);
-
-    const handleTransitionEnd = (e: React.TransitionEvent) => {
-        if (e.propertyName === 'opacity' && !isVisible) {
-            setIndex((prev) => (prev + 1) % words.length);
-            setIsVisible(true);
-        }
-    };
 
     const handleCopy = async () => {
         await navigator.clipboard.writeText(email);
