@@ -111,7 +111,15 @@
 
 .card-hobbie-icon-container-light {
     padding-right: 10px;
-    color: var(--secondary-text);
+    color: var(--text-color);
+}
+
+.card-hobbie-title-container-light {
+    font-size: 16px;
+    font-family: 'Fraunces';
+    font-weight: bolder;
+    padding-bottom: 1px;
+    color: var(--text-color);
 }
 
 .card-hobbie-description-container-light {
