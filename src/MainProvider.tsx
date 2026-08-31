@@ -9,6 +9,7 @@ const router = createBrowserRouter(routes)
 export const MainProvider = () => {
     const employ: Employ = {
         Icon: TerminalIcon,
+        roles: [' Full Stack ', ' Software ', ' AI Product '],
         name: 'Diego Romero',
         alias: 'DraketDev',
         location: 'Puebla, MX',
