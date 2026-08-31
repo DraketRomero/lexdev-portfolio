@@ -76,6 +76,7 @@ export { SunIcon } from "./SunIcon";
 export { SymfonyIcon } from './SymfonyIcon';
 export { TailwindIcon } from './TailwindIcon';
 export { TokioIcon } from './TokioIcon';
+export { TerminalIcon } from './TerminalIcon';
 export { TypeScriptIcon } from './TypeScriptIcon';
 export { TVIcon } from './TVIcon';
 export { VidegameIcon } from "./VideogameIcon";
