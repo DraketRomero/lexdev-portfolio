@@ -132,6 +132,48 @@
       }
     }
   },
+  "aboutme": {
+    "title": "About Me",
+    "devDescription": {
+      "0": "Developer with more than 6 years of experience in the design and implementation of scalable web applications and RESTful APIs.",
+      "1": "Committed to clean code, I actively apply accessibility standards and performance optimization techniques, including independent components, signals, lazy loading, and the OnPush change detection strategy."
+    },
+    "subTitle": "Hobbies and Interests",
+    "subTitleDescription": "Things I like to do outside of the IDE.",
+    "cardContainers": {
+      "music": {
+        "title": "Music",
+        "description": "Ever since I was very young, I've always loved music, and as I grew up, one of my dreams was to learn to play the guitar. In middle school, I had the opportunity to join the student folk music group, and I haven't stopped playing since. In my free time, I usually learn new songs and sing them at the top of my lungs. I also practice singing a lot."
+      },
+      "lecture": {
+        "title": "Reading",
+        "description": "One of the activities I wanted to turn into a habit rather than just a hobby was reading. For years, it was something I found difficult to do, since I’m better at learning through hands-on experience. In recent years, I’ve set a goal for myself to read at least three books a year."
+      },
+      "game": {
+        "title": "Video Games",
+        "description": "Although it's something I've gradually stopped doing over time, I really like video games. One game I used to enjoy playing with friends was League of Legends, and also Gears of War."
+      },
+      "gym": {
+        "title": "Gym",
+        "description": "This hobby started mainly for health reasons, but it eventually became one of my favorites; I have a lot of fun every time I go. I try to go 3 to 4 times a week and spend 2 to 3 hours on it."
+      },
+      "tv": {
+        "title": "Movies and TV Shows",
+        "description": "Every day, at the end of the day, before going to sleep, I like to watch a movie or a TV show to help me clear my mind and relax, so I can tire my eyes out and fall asleep more easily.",
+        "comment": {
+          "0": "The TV shows I've watched that are my favorites:",
+          "1": {
+            "0": "How I met your mother",
+            "1": "Suits",
+            "2": "Peaky Blinders",
+            "3": "Better Call Saul",
+            "4": "Breaking Bad",
+            "5": "Law and order"
+          }
+        }
+      }
+    }
+  },
   "footer": {
     "primaryText": "This website is a project that reflects and complements my education and experience. It was designed with a great deal of love and enthusiasm, with the goal of showing the world what I am capable of as a person full of imagination.",
     "secondaryText": {

@@ -132,6 +132,48 @@
       }
     }
   },
+  "aboutme": {
+    "title" : "Sobre Mí",
+    "devDescription": {
+      "0": "Desarrollador con más de 6 años de experiencia en el diseño y la implementación de aplicaciones web escalables y API RESTful.",
+      "1": "Comprometido con el código limpio, aplico de forma activa los estándares de accesibilidad y las técnicas de optimización de rendimiento, incluyendo componentes independientes, señales, carga diferida y la estrategia de detección de cambios OnPush."
+    },
+    "subTitle" : "Pasatiempos e intereses",
+    "subTitleDescription": "Actividades que me gusta hacer más allá del IDE.",
+    "cardContainers": {
+      "music": {
+        "title": "Música",
+        "description": "Desde muy pequeño siempre me gustó la música y conforme fui creciendo, uno de mis sueños era aprender a tocar la guitarra. Durante la secundaria tuve la oportunidad de integrarme a la rondalla estudiantil y desde entonces no he dejado de tocar. En mis tiempos libres suelo aprender nuevas canciones y cantarlas a todo pulmon. Tambien suelo practicar mucho mi canto."
+      },
+      "lecture": {
+        "title": "Lectura",
+        "description": "Unas de las actividades que mas que hobbie quise convertir en habito fue la lectura. Por años fue algo que me costaba realizar, ya que soy mas habil aprendiendo de manera practica. Los ultimos años me he puesto la meta de leer al menos 3 libros de manera anual."
+      },
+      "game": {
+        "title": "Videojuegos",
+        "description": "Aunque es algo que ya he dejado de hacer mas con el tiempo, me gustan mucho los videojuegos. Uno que me gustaba jugar con amigos era League Of Legends y tambien Gears of Wars."
+      },
+      "gym": {
+        "title": "Gimnasio",
+        "description": "Este hobbie empezo principalmente por motivos de salud, pero eventualmente se convirtio en uno de mis favoritos, me divierto mucho cada vez que voy. Procuro acudir de 3 a 4 veces a la semana y le dedico de 2 a 3 horas."
+      },
+      "tv": {
+        "title": "Peliculas y series",
+        "description": "Todos los dias, al finalizar el dia, antes de dormir me gusta ver una pelicula o una serie de manera que me ayude a despejar la mente y a relajarme, para poder terminar de cansar la vista y poder consiliar el sueño de manera mas sencilla.",
+        "comment": {
+          "0": "Las series que he visto y son mis favoritas:",
+          "1": {
+            "0": "Como conoci a tu madre.",
+            "1": "La ley de los audaces",
+            "2": "Peaky Blinders",
+            "3": "Mejor llama a Saul",
+            "4": "Breaking Bad",
+            "5": "La ley y el orden."
+          }
+        }
+      }
+    }
+  },
   "footer": {
     "primaryText": "El presente portal es un proyecto que refleja y complementa mi formacion y experiencia. Fue diseñado con mucho amor y entusiasmo con el objetivo de mostrar al mundo lo que soy capaz de hacer como un ser humano lleno de imaginacion.",
     "secondaryText": {
