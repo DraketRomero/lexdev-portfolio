@@ -2,11 +2,13 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import type { Employ } from "./context/useContext";
 import { EmployContext } from "./context/context";
 import { routes } from "./routes/routes";
+import { TerminalIcon } from "./assets/icons";
 
 const router = createBrowserRouter(routes)
 
 export const MainProvider = () => {
     const employ: Employ = {
+        Icon: TerminalIcon,
         name: 'Diego Romero',
         alias: 'DraketDev',
         location: 'Puebla, MX',
