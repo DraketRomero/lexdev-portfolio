@@ -20,6 +20,14 @@
     font-style: italic;
 }
 
+.logo-main-container {
+     display: flex;
+}
+
+.logo-name-container {
+     padding: 6px 0 0 10px;
+}
+
 .message-container {
     padding: 0 0 30px 0;
     font-size: 13px;

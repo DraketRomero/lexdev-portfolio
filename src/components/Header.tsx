@@ -14,7 +14,7 @@ export const Header = () => {
     const { pathname } = useLocation();
     const { t } = useTranslation();
 
-    const { alias } = useEmployContext();
+    const { Icon, alias } = useEmployContext();
 
     useEffect(() => {
         document.body.classList.toggle('darkmode', isDarkTheme)
@@ -32,8 +32,15 @@ export const Header = () => {
             <div className='container'>
                 <nav className='nav-container'>
                     <div className='img-container'>
-                        <Link to='/' className='name' viewTransition>
-                            <span className='role word name'>{"</>"} {alias}</span>
+                        <Link to='/' className='name link-home' viewTransition>
+                            <div>
+                                <span className='role word name'>
+                                    <Icon width={22} height={22} />
+                                </span>
+                            </div>
+                            <div>
+                                <span className='role word name'>{alias}</span>
+                            </div>
                         </Link>
                     </div>
 

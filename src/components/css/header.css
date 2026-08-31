@@ -57,6 +57,10 @@
     color: var(--base-color);
 }
 
+.link-home {
+    display: flex;
+}
+
 .theme-toggle-button {
     display: flex;
 }

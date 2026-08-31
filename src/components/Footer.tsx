@@ -20,14 +20,21 @@ import { useEmployContext } from '../context/context';
 
 export const Footer = () => {
     const { t } = useTranslation();
-    const { alias, email, name, phone, location, social_media } = useEmployContext();
+    const { Icon, alias, email, name, phone, location, social_media } = useEmployContext();
 
     return (
         <footer>
             <div className='main-footer-container'>
                 <div className='message-main-container'>
                     <div className='title-container'>
-                        <span className='title-name'>{"</>"} {name} - {alias}</span>
+                        <div className='logo-main-container'>
+                            <div className='logo-container'>
+                                <p className='title-name'><Icon width={27} height={27} /></p>
+                            </div>
+                            <div  className='logo-name-container'>
+                                <p className='title-name'>{name} - {alias}</p>
+                            </div>
+                        </div>
                     </div>
                     <div className='message-container'>
                         <p className='message-paragraph'>{t('footer.primaryText')}</p>
