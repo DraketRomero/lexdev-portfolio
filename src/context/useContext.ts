@@ -5,6 +5,7 @@ interface SocialMediaURL {
 
 
 export interface Employ {
+    Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
     name: string;
     alias: string;
     phone: string;
