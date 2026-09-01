@@ -4,6 +4,7 @@ import { LayoutPage } from '../pages/LayoutPage';
 import { ContactPage } from '../pages/ContactPage';
 import { ResumePage } from '../pages/ResumePage';
 import { AboutMePage } from '../pages/AboutMePage';
+import { ExperiencePage } from '../pages/ExperiencePage';
 
 export const routes: RouteObject[] = [
     {
@@ -28,7 +29,7 @@ export const routes: RouteObject[] = [
             },
             {
                 path: 'experience',
-                element: <>Experience</>
+                element: <ExperiencePage />
             },
             {
                 path: 'contact',
