@@ -58,6 +58,23 @@
     width: 100%;
 }
 
+.developer-role-paragraph {
+    font-size: 12px;
+    text-align: center;
+}
+
+.developer-role {
+    color: var(--text-color);
+    transition: opacity 300ms ease;
+    opacity: 1;
+    font-weight: bolder;
+    font-family: 'Fraunces';
+}
+
+.developer-role.hidden {
+    opacity: 0;
+}
+
 .aboutme-description {
     font-size: 12px;
     padding-top: 10px;

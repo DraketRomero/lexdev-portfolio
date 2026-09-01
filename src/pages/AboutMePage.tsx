@@ -33,7 +33,7 @@ export const AboutMePage = () => {
 
                             </div>
                             <div className='developer-role-container'>
-                                <RandomRoleNameComponent />
+                                <RandomRoleNameComponent classP='developer-role-paragraph' classS='developer-role' />
                             </div>
                         </div>
                     </div>
