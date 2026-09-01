@@ -41,7 +41,7 @@ export const HomePage = () => {
 
                 <div className='dev-info'>
                     <p className='gretting'>{t('hero.greeting')} <span className='wave-icon'>👋</span>{t('hero.pronoun')}<span className='word'>{name}</span></p>
-                    <RandomRoleNameComponent />
+                    <RandomRoleNameComponent classP='role' classS='word' />
 
                     <div className='description-container'>
                         <p className='description-text'>
@@ -76,14 +76,14 @@ export const HomePage = () => {
 
             <div className='icons-container'>
                 <div className='icons'>
-                    <ButtonIcon href='/cv-diegoromero.pdf' text={t('buttonText.cv')} icon={<DownloadDocumentIcon />} />
-                    <ButtonIcon href={social_media[0].url} text={social_media[0].name} icon={<GithubIcon />} />
-                    <ButtonIcon href={social_media[1].url} text={social_media[1].name} icon={<LinkedInIcon />} />
+                    <ButtonIcon href='/cv-diegoromero.pdf' text={t('buttonText.cv')} Icon={DownloadDocumentIcon} />
+                    <ButtonIcon href={social_media[0].url} text={social_media[0].name} Icon={GithubIcon} />
+                    <ButtonIcon href={social_media[1].url} text={social_media[1].name} Icon={LinkedInIcon} />
 
                     <div className='document-button-container'>
                         <Link to='/contact' className="document-link" viewTransition>
                             <div className='document-icon'>
-                                <ContactFilledIcon />
+                                <ContactFilledIcon width={17} height={17}  />
                             </div>
 
                             <span className='document-text document-text-span'>
@@ -95,7 +95,7 @@ export const HomePage = () => {
                     <div className='button-email-container'>
                         <div className='data-contact-container' onClick={handleCopy}>
                             <div className='icon-clipboard'>
-                                {copied ? <CheckIcon className='icon-pop' /> : <CopyClipboardIcon className='icon-pop' />}
+                                {copied ? <CheckIcon width={18} height={15} className='icon-pop' /> : <CopyClipboardIcon width={18} height={18} className='icon-pop' />}
                             </div>
                             <div className='email-text'>
                                 {email}
