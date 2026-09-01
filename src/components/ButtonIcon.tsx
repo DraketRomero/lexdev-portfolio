@@ -3,10 +3,10 @@ import './css/buttonIcon.css';
 interface IButtonIcon {
     href: string;
     text: string;
-    icon: React.JSX.Element;
+    Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }
 
-export const ButtonIcon = ({ href, text, icon }: IButtonIcon) => {
+export const ButtonIcon = ({ href, text, Icon }: IButtonIcon) => {
     return (
         <div className='document-button-container'>
             <a href={href} target='_blank' rel='noopener noreferrer' className="document-link">
