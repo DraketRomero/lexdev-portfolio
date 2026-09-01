@@ -11,7 +11,7 @@ export const ButtonIcon = ({ href, text, Icon }: IButtonIcon) => {
         <div className='document-button-container'>
             <a href={href} target='_blank' rel='noopener noreferrer' className="document-link">
                 <div className='document-icon'>
-                    {icon}
+                    <Icon width={18} height={18} />
                 </div>
 
                 <span className='document-text'>

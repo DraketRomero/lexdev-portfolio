@@ -83,7 +83,7 @@ export const HomePage = () => {
                     <div className='document-button-container'>
                         <Link to='/contact' className="document-link" viewTransition>
                             <div className='document-icon'>
-                                <ContactFilledIcon width={17} height={17}  />
+                                <ContactFilledIcon width={17} height={17} />
                             </div>
 
                             <span className='document-text document-text-span'>
@@ -95,10 +95,14 @@ export const HomePage = () => {
                     <div className='button-email-container'>
                         <div className='data-contact-container' onClick={handleCopy}>
                             <div className='icon-clipboard'>
-                                {copied ? <CheckIcon width={18} height={15} className='icon-pop' /> : <CopyClipboardIcon width={18} height={18} className='icon-pop' />}
+                                <p>
+                                    {copied ? <CheckIcon width={15} height={15} className='icon-pop' /> : <CopyClipboardIcon width={15} height={15} className='icon-pop' />}
+                                </p>
                             </div>
                             <div className='email-text'>
-                                {email}
+                                <p>
+                                    {email}
+                                </p>
                             </div>
                         </div>
                     </div>
