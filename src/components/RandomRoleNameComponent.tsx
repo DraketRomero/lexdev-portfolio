@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 import { useEmployContext } from "../context/context";
-export const RandomRoleNameComponent = () => {
+
+interface RandomRoleNameProps {
+    classP: string;
+    classS: string;
+}
+
+export const RandomRoleNameComponent = ({ classP, classS }: RandomRoleNameProps) => {
     const [isVisible, setIsVisible] = useState(true);
     const [index, setIndex] = useState(0);
 
@@ -23,11 +29,10 @@ export const RandomRoleNameComponent = () => {
 
     return (
         <div>
-            <p className="role" style={{ fontSize: "12px", textAlign: "center" }}>
+            <p className={classP}>
                 Senior
                 <span
-                    className={`word ${isVisible ? '' : 'hidden'}`}
-                    style={{ color: "var(--secondary-color)" }}
+                    className={`${classS} ${isVisible ? '' : 'hidden'}`}
                     onTransitionEnd={handleTransitionEnd}>{`${roles[index]} `}
                 </span>
                 Engineer
