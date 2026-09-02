@@ -1,13 +1,13 @@
-import { SkillGridIcons } from "../components/SkillGridIcons"
-import { backendIcons } from "./BackendTech"
-import { DevOpsIcons } from "./DevOpsTech"
-import { frontendIcons } from "./FrontendTech"
-import { LearningIcons } from "./LearningTech"
-import { TestingIcons } from "./TestingTech"
-import { toolsIcons } from "./ToolsTech"
-import { useTranslation } from 'react-i18next';
 import './css/resumePage.css'
+import { backendIcons } from "./data/BackendTech"
+import { DevOpsIcons } from "./data/DevOpsTech";
+import { frontendIcons } from "./data/FrontendTech";
+import { LearningIcons } from "./data/LearningTech";
+import { SkillGridIcons } from "../components/SkillGridIcons"
 import { SkillsFilledIcon } from "../assets/icons"
+import { TestingIcons } from "./data/TestingTech";
+import { toolsIcons } from "./data/ToolsTech";
+import { useTranslation } from 'react-i18next';
 
 export const ResumePage = () => {
     const { t } = useTranslation();
