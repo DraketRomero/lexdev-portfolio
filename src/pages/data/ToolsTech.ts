@@ -1,13 +1,5 @@
-import { 
-    ClaudeIcon,
-    GithubIcon, 
-    GitIcon, 
-    IntelliJIDEAIcon, 
-    PostmanIcon, 
-    VSCodeIcon, 
-    ZedIcon 
-} from '../assets/icons';
-import type { ITechComponent } from '../components/interfaces/ITechComponent';
+import { ClaudeIcon, GithubIcon, GitIcon, IntelliJIDEAIcon, PostmanIcon, VSCodeIcon, ZedIcon } from "../../assets/icons";
+import type { ITechComponent } from "../../components/interfaces/ITechComponent";
 
 export const toolsIcons: ITechComponent[] = [
     {

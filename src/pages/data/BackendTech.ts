@@ -27,8 +27,8 @@ import {
     SymfonyIcon, 
     TokioIcon, 
     TypeScriptIcon,
-} from '../assets/icons';
-import type { ITechComponent } from '../components/interfaces/ITechComponent';
+} from '../../assets/icons';
+import type { ITechComponent } from '../../components/interfaces/ITechComponent';
 
 
 export const backendIcons: ITechComponent[] = [

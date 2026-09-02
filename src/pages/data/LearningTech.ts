@@ -1,5 +1,5 @@
-import { FastApiIcon } from "../assets/icons/FastApiIcon";
-import type { ITechComponent } from "../components/interfaces/ITechComponent";
+import { FastApiIcon } from "../../assets/icons";
+import type { ITechComponent } from "../../components/interfaces/ITechComponent";
 
 export const LearningIcons: ITechComponent[] = [
     {

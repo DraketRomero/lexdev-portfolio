@@ -1,8 +1,5 @@
-import { JestIcon } from "../assets/icons/JestIcon";
-import { KarmaIcon } from "../assets/icons/KarmaIcon";
-import { MockitoIcon } from "../assets/icons/MockitoIcon";
-import { PhpIcon } from "../assets/icons/PhpIcon";
-import type { ITechComponent } from "../components/interfaces/ITechComponent";
+import { JestIcon, KarmaIcon, MockitoIcon, PhpIcon } from "../../assets/icons";
+import type { ITechComponent } from "../../components/interfaces/ITechComponent";
 
 export const TestingIcons: ITechComponent[] = [
     {
