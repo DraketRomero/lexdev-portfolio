@@ -4,8 +4,8 @@ import { jobs } from "./data/JobExperience"
 export const ExperiencePage = () => {
     return (
         <div style={{ width: "100%" }}>
-            <div style={{ padding: "20px 40px 0 40px" }}>
-                <div style={{ padding: "0 0 15px 0" }}>
+            <div style={{ padding: "20px 20px 0 20px" }}>
+                <div style={{ padding: "0 0 15px 20px" }}>
                     <p style={{ fontSize: "25px", fontStyle: "italic", fontWeight: "bolder", fontFamily: "'Fraunces'", color: "var(--text-color)" }}>Experience</p>
                 </div>
 
