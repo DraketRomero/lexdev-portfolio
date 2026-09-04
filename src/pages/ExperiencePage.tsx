@@ -1,12 +1,13 @@
 import { JobExperienceCard } from "../components/JobExperienceCard"
 import { jobs } from "./data/JobExperience"
+import './css/experiencePage.css';
 
 export const ExperiencePage = () => {
     return (
-        <div style={{ width: "100%" }}>
-            <div style={{ padding: "20px 20px 0 20px" }}>
-                <div style={{ padding: "0 0 15px 20px" }}>
-                    <p style={{ fontSize: "25px", fontStyle: "italic", fontWeight: "bolder", fontFamily: "'Fraunces'", color: "var(--text-color)" }}>Experience</p>
+        <div className='experience-container'>
+            <div className='experience-main-container'>
+                <div className='experience-title-container'>
+                    <p className='experience-title'>Experience</p>
                 </div>
 
                 {

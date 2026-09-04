@@ -1,0 +1,19 @@
+.experience-container {
+    width: 100%
+}
+
+.experience-main-container {
+    padding: 20px 20px 0 20px;
+}
+
+.experience-title-container {
+    padding: 0 0 15px 20px;
+}
+
+.experience-title {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Fraunces';
+    color: var(--text-color);
+}

@@ -1,0 +1,87 @@
+.job-experience-first-card-main-container {
+    padding-top: 0;
+}
+
+.job-experience-remaining-card-main-container {
+    padding-top: 15px;
+}
+
+.job-experience-card-container {
+    padding-top: 30px;
+    margin: 10px 0 30px 0;
+    border-bottom: 1px solid var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
+}
+
+.job-experience-card-info-main-container {
+    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    padding: 0 30px 0 30px;
+    margin: 0 10px 0 10px;
+}
+
+.job-experience-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.job-experience-enterprise-name {
+    font-weight: bolder;
+    color: var(--text-color);
+}
+
+.job-experience-modality {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--text-color);
+    align-content: center;
+}
+
+.job-experience-role {
+    font-size: 10px;
+    color: var(--secondary-text);
+}
+
+.job-experience-duration {
+    font-size: 10px;
+    font-family: 'Fraunces';
+    font-style: italic;
+    color: var(--secondary-text);
+}
+
+.job-experience-block {
+    height: 20px;
+}
+
+.job-experience-task-container {
+    padding: 0 20px 10px 20px;
+    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    margin: 0 10px 0 10px;
+}
+
+.job-experience-task-main-container {
+    border-top: 1px dotted var(--secondary-color);
+    padding: 10px 0 0 0;
+}
+
+.job-experience-task-list {
+    color: var(--secondary-color);
+    padding: 0 0 0 5px;
+}
+
+.job-experience-task-list-item {
+    font-size: 10px;
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.job-experience-task-list-item-container {
+    display: flex;
+}
+
+.job-experience-task-list-item-main-container {
+    padding-left: 10px;
+}
